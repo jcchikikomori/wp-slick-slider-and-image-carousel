@@ -1,0 +1,68 @@
+=== WP Slick Slider and Image Carousel  ===
+Contributors: wponlinesupport, anoopranawat 
+Tags: image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive posts slider, carousel, image carousel
+Requires at least: 3.1
+Tested up to: 4.3.1
+Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+A quick, easy way to add and display mulipale WP Slick Slider and carousel using a shortcode.
+ 
+== Description ==
+Display multiple slick image slider and carousel using shortcode with category. Fully responsive, Swipe enabled, Desktop mouse dragging and  Infinite looping.Fully accessible with arrow key navigation  Autoplay, dots, arrows etc.It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page.You can also display image slider on your website header.We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of designthat you like and use.
+= You can use 2 shortcodes =
+<code>[slick-slider]</code> and <code>[slick-carousel-slider]</code>
+
+= Complete shortcode is =
+<code>[slick-slider  design="design-1" category="8" show_content="true" dots="true" arrows="true" autoplay="true"
+ autoplay_interval="5000" speed="1000"]</code>
+
+= Here is Template code =
+<code><?php echo do_shortcode('[slick-slider]'); ?> </code> and <code><?php echo do_shortcode('[slick-carousel-slider]'); ?> </code>
+
+= Use Following parameters with shortcode =
+<code>[slick-slider]</code>
+
+* **design** : [slick-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).* **category**: [slick-slider category="category_ID"] ( ie Display slider by their category ID ).
+* **show_content** : [slick-slider show_content="true" ] (Display content OR not. By default value is "True". Options are "ture OR false").* **Pagination and arrows** : [slick-slider dots="false" arrows="false"]
+* **Autoplay and Autoplay Interval**: [slick-slider autoplay="true" autoplayInterval="100"]* **Slide Speed**: [slick-slider speed="3000"]* **fade** : [slick-slider fade="true" ] (Slider Fade effect. By default effect is slide. If you set fade="true" then effect change from slide to fade ).* **sliderheight** : [slick-slider sliderheight="400" ] (Slider height. By default given 500px height.)
+
+= Use Following parameters with shortcode =
+
+<code>[slick-slider]</code>
+
+* **design** : [slick-carousel-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).
+* **category**: [slick-carousel-slider category="category_ID"] ( ie Display slider by their category ID ).
+* **slidestoshow** : [slick-carousel-slider slidestoshow="3" ] (Display number of images at a time. By default value is "3").
+* **slidestoscroll** : [slick-carousel-slider slidestoscroll="1" ] (Scroll number of images at a time. By default value is "1").
+* **Pagination and arrows** : [slick-carousel-slider dots="false" arrows="false"]
+* **Autoplay and Autoplay Interval**: [slick-carousel-slider autoplay="true" autoplayInterval="100"]
+* **Slide Speed**: [slick-carousel-slider speed="3000"]
+* **centermode** : [slick-carousel-slider centermode="true" ] ( Display main image on center. By default value is "false" ).
+* **variablewidth** : [slick-carousel-slider variablewidth="true" ] (Variable width of images in slider. By default value us "false")
+= Features include =
+
+* Display unlimited number of slider and carousel with the help of category.
+* Fully responsive. Scales with its container.
+* Fully accessible with arrow key navigation.
+* Responsive
+* Given shortcode and template code.
+* Use for header image slider.
+
+
+== Installation ==
+1. Upload the 'wp-slick-slider-and-carousel' folder to the '/wp-content/plugins/' directory.
+2. Activate the "wp-slick-slider-and-carousel" list plugin through the 'Plugins' menu in WordPress.
+3. Add this short code where you want to display slider
+<code>[slick-slider]</code> and <code>[slick-carousel-slider]</code>
+
+== Screenshots ==
+
+== Changelog ==
+= 1.0 =
+* Initial release.
+
+== Upgrade Notice ==
+= 1.0 =
+* Initial release
