@@ -57,7 +57,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	}if( $sliderheight ) { 
 		$sliderheightv = $sliderheight;
 	} else {
-		$sliderheightv = '500';
+		$sliderheightv = '400';
 	}
 
 	ob_start();	
