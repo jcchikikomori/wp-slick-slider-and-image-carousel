@@ -12,14 +12,14 @@ A quick, easy way to add and display mulipale WP Slick Slider and carousel using
 == Description ==
 Display multiple slick image slider and carousel using shortcode with category. Fully responsive, Swipe enabled, Desktop mouse dragging and  Infinite looping.Fully accessible with arrow key navigation  Autoplay, dots, arrows etc.It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page.You can also display image slider on your website header.We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of designthat you like and use.
 = You can use 2 shortcodes =
-<code>[slick-slider]</code> and <code>[slick-carousel-slider]</code>
+<code>[slick-slider] and [slick-carousel-slider]</code>
 
 = Complete shortcode is =
 <code>[slick-slider  design="design-1" category="8" show_content="true" dots="true" arrows="true" autoplay="true"
  autoplay_interval="5000" speed="1000"]</code>
 
 = Here is Template code =
-<code><?php echo do_shortcode('[slick-slider]'); ?> </code> and <code><?php echo do_shortcode('[slick-carousel-slider]'); ?> </code>
+<code><?php echo do_shortcode('[slick-slider]'); ?>  and <?php echo do_shortcode('[slick-carousel-slider]'); ?> </code>
 
 = Use Following parameters with shortcode =
 <code>[slick-slider]</code>
@@ -30,7 +30,7 @@ Display multiple slick image slider and carousel using shortcode with category. 
 
 = Use Following parameters with shortcode =
 
-<code>[slick-slider]</code>
+<code>[slick-carousel-slider]</code>
 
 * **design** : [slick-carousel-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).
 * **category**: [slick-carousel-slider category="category_ID"] ( ie Display slider by their category ID ).
