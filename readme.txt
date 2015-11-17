@@ -57,7 +57,13 @@ Display multiple slick image slider and carousel using shortcode with category. 
 3. Add this short code where you want to display slider
 <code>[slick-slider]</code> and <code>[slick-carousel-slider]</code>
 
-== Screenshots ==
+== Screenshots ==
+
+1. Design-1
+2. Design-2
+3. Design-3
+4. Design-4
+5. Design-56. Design-6
 
 == Changelog ==
 = 1.0 =
