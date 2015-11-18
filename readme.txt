@@ -73,10 +73,18 @@ Check [DEMO](http://demo.wponlinesupport.com/slick-slider-demo/) to know more.
 4. Design-4
 5. Design-56. Design-6
 
-== Changelog ==
+== Changelog ==
+
+= 1.1 =
+* Fixed some bug
+* Added Limit
 = 1.0 =
 * Initial release.
 
 == Upgrade Notice ==
-= 1.0 =
+= 1.1 =
+* Fixed some bug
+* Added Limit
+
+= 1.0 =
 * Initial release

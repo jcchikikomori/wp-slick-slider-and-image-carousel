@@ -4,7 +4,7 @@
  * Plugin URI: http://www.wponlinesupport.com/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.0
+ * Version: 1.1
  * Author URI: http://www.wponlinesupport.com/
  *
  * @package WordPress
