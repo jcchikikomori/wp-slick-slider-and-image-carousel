@@ -1,6 +1,7 @@
 <?php 
 function get_wpsisac_slider( $atts, $content = null ){          
       extract(shortcode_atts(array(
+	    "limit"    => '',
 		"category" => '',
 		"design" => '',		"show_content" => '',       
 		"dots"     			=> '',
@@ -9,7 +10,12 @@ function get_wpsisac_slider( $atts, $content = null ){
 		"fade"		        => '',
 		"sliderheight"     => '',
 	), $atts));
-
+    if( $limit ) { 
+		$posts_per_page = $limit; 
+	} else {
+		$posts_per_page = '-1';
+	}
+	
 	if( $category ) { 
 		$cat = $category; 
 	} else {

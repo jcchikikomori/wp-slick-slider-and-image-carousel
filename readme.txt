@@ -29,6 +29,7 @@ Check [DEMO](http://demo.wponlinesupport.com/slick-slider-demo/) to know more.
 = Use Following parameters with shortcode =
 <code>[slick-slider]</code>
 
+* **limit** : [slick-slider limit="-1"] (Limit define the number of images to be display at a time. By default set to "-1" ie all images. eg. if you want to display only 5 images then set limit to limit="5")
 * **design** : [slick-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).* **category**: [slick-slider category="category_ID"] ( ie Display slider by their category ID ).
 * **show_content** : [slick-slider show_content="true" ] (Display content OR not. By default value is "True". Options are "ture OR false").* **Pagination and arrows** : [slick-slider dots="false" arrows="false"]
 * **Autoplay and Autoplay Interval**: [slick-slider autoplay="true" autoplayInterval="100"]* **Slide Speed**: [slick-slider speed="3000"]* **fade** : [slick-slider fade="true" ] (Slider Fade effect. By default effect is slide. If you set fade="true" then effect change from slide to fade ).* **sliderheight** : [slick-slider sliderheight="400" ] (Slider height. By default given 500px height.)
@@ -37,6 +38,7 @@ Check [DEMO](http://demo.wponlinesupport.com/slick-slider-demo/) to know more.
 
 <code>[slick-carousel-slider]</code>
 
+* **limit** : [slick-carousel-slider limit="-1"] (Limit define the number of images to be display at a time. By default set to "-1" ie all images. eg. if you want to display only 5 images then set limit to limit="5")
 * **design** : [slick-carousel-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).
 * **category**: [slick-carousel-slider category="category_ID"] ( ie Display slider by their category ID ).
 * **slidestoshow** : [slick-carousel-slider slidestoshow="3" ] (Display number of images at a time. By default value is "3").
