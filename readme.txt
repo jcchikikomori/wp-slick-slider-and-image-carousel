@@ -41,6 +41,7 @@ Check [DEMO](http://demo.wponlinesupport.com/slick-slider-demo/) to know more.
 * **limit** : [slick-carousel-slider limit="-1"] (Limit define the number of images to be display at a time. By default set to "-1" ie all images. eg. if you want to display only 5 images then set limit to limit="5")
 * **design** : [slick-carousel-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).
 * **category**: [slick-carousel-slider category="category_ID"] ( ie Display slider by their category ID ).
+* **image_size** : [slick-carousel-slider image_size="large"] (Default is "medium", values are thumbnail, medium, large, original)
 * **slidestoshow** : [slick-carousel-slider slidestoshow="3" ] (Display number of images at a time. By default value is "3").
 * **slidestoscroll** : [slick-carousel-slider slidestoscroll="1" ] (Scroll number of images at a time. By default value is "1").
 * **Pagination and arrows** : [slick-carousel-slider dots="false" arrows="false"]

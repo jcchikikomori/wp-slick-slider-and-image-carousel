@@ -1,4 +1,1 @@
-  <div class="slick-image-slide">			
-			<?php the_post_thumbnail('medium'); ?>
-			
-	</div>
+  <div class="slick-image-slide">  		<?php if($sliderimage_size == '' || $sliderimage_size == 'medium')  {			 the_post_thumbnail('medium'); 			 		} elseif ($sliderimage_size == 'large') {						the_post_thumbnail('large'); 		} elseif ( $sliderimage_size == 'original') {			the_post_thumbnail('url'); 		} elseif ( $sliderimage_size == 'thumbnail') {			the_post_thumbnail('thumbnail'); 		}  else {			 the_post_thumbnail('medium'); 							}?>	</div>
