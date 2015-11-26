@@ -63,7 +63,7 @@ Check [DEMO](http://demo.wponlinesupport.com/slick-slider-demo/) to know more.
 1. Upload the 'wp-slick-slider-and-carousel' folder to the '/wp-content/plugins/' directory.
 2. Activate the "wp-slick-slider-and-carousel" list plugin through the 'Plugins' menu in WordPress.
 3. Add this short code where you want to display slider
-<code>[slick-slider]</code> and <code>[slick-carousel-slider]</code>
+<code>[slick-slider] and [slick-carousel-slider]</code>
 
 == Screenshots ==
 
