@@ -6,7 +6,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-slider .slick-dots{padding:0 !important; margin:0 !important; position:absolute;  text-align:center;}
 .wpsisac-slick-slider .slick-dots li button{text-indent:-99999px;}
 .wpsisac-slick-slider .slick-dots li {list-style:none !important; display:inline-block !important; margin:0 5px !important; padding:0px !important; }
-.wpsisac-slick-slider .slick-dots li button{background:#fff !important; margin:0px !important; padding:0px !important; border:3px solid #000; border-radius:50% !important; width:18px !important; height:18px !important;}
+.wpsisac-slick-slider .slick-dots li button{background:#fff !important; margin:0px !important; padding:0px !important; border:1px solid #000; border-radius:50% !important; width:13px !important; height:13px !important;}
 .wpsisac-slick-slider .slick-dots li button:focus{outline:none !important}
 .wpsisac-slick-slider .slick-dots li.slick-active button{background:#444 !important;}
 .wpsisac-slick-slider .slick-slide{padding:0px !important}
@@ -19,7 +19,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-carousal .slick-dots{padding:0 !important; margin:0 !important; position:absolute;  text-align:center;}
 .wpsisac-slick-carousal .slick-dots li button{text-indent:-99999px;}
 .wpsisac-slick-carousal .slick-dots li {list-style:none !important; display:inline-block !important; margin:0 5px !important; padding:0px !important; }
-.wpsisac-slick-carousal .slick-dots li button{background:#fff !important; margin:0px !important; padding:0px !important; border:3px solid #000; border-radius:50% !important; width:18px !important; height:18px !important;}
+.wpsisac-slick-carousal .slick-dots li button{background:#fff !important; margin:0px !important; padding:0px !important; border:1px solid #000; border-radius:50% !important; width:13px !important; height:13px !important;}
 .wpsisac-slick-carousal .slick-dots li button:focus{outline:none !important}
 .wpsisac-slick-carousal .slick-dots li.slick-active button{background:#444 !important;}
 .wpsisac-slick-carousal .slick-slide{padding:0px !important}
