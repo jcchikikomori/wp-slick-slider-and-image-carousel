@@ -118,7 +118,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 			autoplay: <?php echo $autoplayv; ?>,							fade: <?php echo $fadev; ?>,
 			autoplaySpeed: <?php echo $autoplayIntervalv; ?>,
 			slidesToShow: 1,
-			slidesToScroll: 1,			adaptiveHeight: false,			
+			slidesToScroll: 1,			adaptiveHeight: false			
 			});
 	});
 	</script>	
