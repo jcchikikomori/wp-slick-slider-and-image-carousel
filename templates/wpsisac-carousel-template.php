@@ -25,7 +25,7 @@ function get_wpsisac_carousel_slider( $atts, $content = null ){
     {
       breakpoint: 640,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,		 dots: false
       }
     },
