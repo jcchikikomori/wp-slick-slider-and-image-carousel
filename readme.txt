@@ -52,6 +52,7 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 = Features include =
 
 * Display unlimited number of slider and carousel with the help of category.
+* Touch-enabled Navigation.
 * Fully responsive. Scales with its container.
 * Fully accessible with arrow key navigation.
 * Responsive
