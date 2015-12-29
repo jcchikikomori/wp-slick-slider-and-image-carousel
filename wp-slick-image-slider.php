@@ -2,9 +2,10 @@
 /**
  * Plugin Name: WP Slick Slider and Image Carousel
  * Plugin URI: http://www.wponlinesupport.com/
+ * Text Domain: wp-slick-slider-and-image-carousel
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.1
+ * Version: 1.2
  * Author URI: http://www.wponlinesupport.com/
  *
  * @package WordPress

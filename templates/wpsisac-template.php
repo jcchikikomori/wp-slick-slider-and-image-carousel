@@ -107,23 +107,33 @@ function get_wpsisac_slider( $atts, $content = null ){
 					endwhile; ?>
 		  </div><!-- #post-## -->		
 		  <?php
-            endif; ?>
-<script type="text/javascript">
+            endif; 
+             wp_reset_query(); 	
+?>
+
+<script type="text/javascript">
+
 		jQuery(document).ready(function(){
-		jQuery('.wpsisac-slick-slider.<?php echo $slidercdesign; ?>').slick({
+		jQuery('.wpsisac-slick-slider.<?php echo $slidercdesign; ?>').slick({
+
 			dots: <?php echo $dotsv; ?>,
 			infinite: true,
 			arrows: <?php echo $arrowsv; ?>,
 			speed: <?php echo $speedv; ?>,
-			autoplay: <?php echo $autoplayv; ?>,							fade: <?php echo $fadev; ?>,
-			autoplaySpeed: <?php echo $autoplayIntervalv; ?>,
+			autoplay: <?php echo $autoplayv; ?>,				
+			fade: <?php echo $fadev; ?>,
+			autoplaySpeed: <?php echo $autoplayIntervalv; ?>,
+
 			slidesToShow: 1,
-			slidesToScroll: 1,			adaptiveHeight: false			
-			});
-	});
-	</script>	
-			<?php
-             wp_reset_query(); 			
+			slidesToScroll: 1,
+			adaptiveHeight: false
+			
+
+			
+});
+	});
+
+	</script>				 <?php
 		return ob_get_clean();			             
 	}
 add_shortcode('slick-slider','get_wpsisac_slider');

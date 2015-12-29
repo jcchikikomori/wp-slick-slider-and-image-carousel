@@ -17,11 +17,14 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 <code>[slick-slider] and [slick-carousel-slider]</code>
 
 = Complete shortcode  is =
-<code>[slick-slider  design="design-1" category="8" show_content="true" dots="true" arrows="true" autoplay="true"
+<code>[slick-slider  design="design-1" category="8" show_content="true"
+ dots="true" arrows="true" autoplay="true"
  autoplay_interval="5000" speed="1000" effect="false"]</code>
  
-<code>[slick-carousel-slider  design="design-6" category="8" slidestoshow="4" slidestoscroll="1" dots="true"
- arrows="true" autoplay="true"  autoplay_interval="5000" speed="1000" centermode="true" variablewidth="true"]</code> 
+<code>[slick-carousel-slider  design="design-6" category="8"
+ slidestoshow="4" slidestoscroll="1" dots="true"
+ arrows="true" autoplay="true"  autoplay_interval="5000"
+ speed="1000" centermode="true" variablewidth="true"]</code> 
 
 = Here is Template code =
 <code><?php echo do_shortcode('[slick-slider]'); ?>  and
@@ -77,13 +80,21 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 
 == Changelog ==
 
+= 1.2 =
+* Fixed some bug
+* Added link to carousel mode
+
 = 1.1 =
 * Fixed some bug
 * Added Limit
 = 1.0 =
 * Initial release.
 
-== Upgrade Notice ==
+== Upgrade Notice ==
+
+= 1.2 =
+* Fixed some bug
+* Added link to carousel mode
 = 1.1 =
 * Fixed some bug
 * Added Limit
