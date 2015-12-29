@@ -24,7 +24,8 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
  arrows="true" autoplay="true"  autoplay_interval="5000" speed="1000" centermode="true" variablewidth="true"]</code> 
 
 = Here is Template code =
-<code><?php echo do_shortcode('[slick-slider]'); ?>  and <?php echo do_shortcode('[slick-carousel-slider]'); ?> </code>
+<code><?php echo do_shortcode('[slick-slider]'); ?>  and
+ <?php echo do_shortcode('[slick-carousel-slider]'); ?> </code>
 
 = Use Following parameters with shortcode =
 <code>[slick-slider]</code>
