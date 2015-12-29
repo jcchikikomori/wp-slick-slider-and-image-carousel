@@ -18,7 +18,7 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 
 = Complete shortcode  is =
 <code>[slick-slider  design="design-1" category="8" show_content="true"
- dots="true" arrows="true" autoplay="true"
+ dots="true" arrows="true" autoplay="true" sliderheight="400"
  autoplay_interval="5000" speed="1000" effect="false"]</code>
  
 <code>[slick-carousel-slider  design="design-6" category="8"
