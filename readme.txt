@@ -12,7 +12,9 @@ A quick, easy way to add and display mulipale WP Slick Slider and carousel using
 == Description ==
 Display multiple slick image slider and carousel using shortcode with category. Fully responsive, Swipe enabled, Desktop mouse dragging and  Infinite looping.Fully accessible with arrow key navigation  Autoplay, dots, arrows etc.It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page.You can also display image slider on your website header.We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of designthat you like and use.
 
-Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+
+Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
 = You can use 2 shortcodes =
 <code>[slick-slider] and [slick-carousel-slider]</code>
 
@@ -53,6 +55,17 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 * **Slide Speed**: [slick-carousel-slider speed="3000"]
 * **centermode** : [slick-carousel-slider centermode="true" ] ( Display main image on center. By default value is "false" ).
 * **variablewidth** : [slick-carousel-slider variablewidth="true" ] (Variable width of images in slider. By default value us "false")
+= PRO Features Added : =
+
+* Added 16 Pro designs
+* 10 Image Slider Designs
+* 6 Image Carousel Slider
+* Display content with image and link in Carousel mode   
+* Simple & Easy to Use
+
+Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+
+
 = Features include =
 
 * Display unlimited number of slider and carousel with the help of category.
@@ -80,6 +93,10 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 
 == Changelog ==
 
+= 1.2.1 =
+* Fixed some bug
+* Added Pro version with 16 designs
+
 = 1.2 =
 * Fixed some bug
 * Added link to carousel mode
@@ -91,6 +108,10 @@ Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-caro
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+* Fixed some bug
+* Added Pro version with 16 designs
 
 = 1.2 =
 * Fixed some bug
