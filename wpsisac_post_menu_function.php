@@ -8,7 +8,7 @@ function register_wpsisac_slider_page_callback() {
 
 	$result ='<div class="wrap"><div id="icon-tools" class="icon32"></div><h2 style="padding:15px 0">Slider Designs</h2></div>
 	<div class="medium-12 columns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
-				<p><a href="" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
+				<p><a href="http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
 				<div class="medium-12 columns"><h3>Free Designs</h3></div>
 				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-1.jpg"><p><code>[slick-slider design="design-1"]</code></p></div></div>
 				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-2.jpg"><p><code>[slick-slider design="design-2"]</code></p></div></div>
@@ -32,7 +32,9 @@ function register_wpsisac_slider_page_callback() {
 				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-8.jpg"><p><code>[slick-slider design="prodesign-8"]</code></p></div></div>
 				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-9.jpg"><p><code>[slick-slider design="prodesign-9"]</code></p></div></div>
 				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-10.jpg"><p><code>[slick-slider design="prodesign-10"]</code></p></div></div>
-				<div class="medium-12 columns"><h3>Complete shortcode for Carousel Slider:</h3><p><code>[slick-carousel-slider  design="prodesign-11" category="8" limit="5"
+				<div class="medium-12 columns">
+				<p><a href="http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p>
+				<h3>Complete shortcode for Carousel Slider:</h3><p><code>[slick-carousel-slider  design="prodesign-11" category="8" limit="5"
  slidestoshow="4" slidestoscroll="1" dots="true" image_size="large" show_content="true" arrows="true" autoplay="true"  autoplay_interval="5000" speed="1000" centermode="true" variablewidth="true" loop="true"]</code></p></div>
 
 				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-11.jpg"><p><code>[slick-carousel-slider design="prodesign-11"]</code></p></div></div>
