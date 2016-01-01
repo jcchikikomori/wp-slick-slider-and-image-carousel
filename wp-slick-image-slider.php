@@ -3,6 +3,7 @@
  * Plugin Name: WP Slick Slider and Image Carousel
  * Plugin URI: http://www.wponlinesupport.com/
  * Text Domain: wp-slick-slider-and-image-carousel
+ * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
  * Version: 1.2.1
@@ -34,7 +35,11 @@ function free_wpsisac_rpfs_admin_notice() {
         }
     }
 }     
- 
+
+add_action('plugins_loaded', 'wpsisac_load_textdomain');
+function wpsisac_load_textdomain() {
+	load_plugin_textdomain( 'wp-slick-slider-and-image-carousel', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
+} 
  
 add_action( 'wp_enqueue_scripts','wpsisacstyle_css' );
 	function wpsisacstyle_css() {
