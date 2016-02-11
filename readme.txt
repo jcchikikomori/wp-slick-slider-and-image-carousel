@@ -56,15 +56,16 @@ Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slid
 * **centermode** : [slick-carousel-slider centermode="true" ] ( Display main image on center. By default value is "false" ).
 * **variablewidth** : [slick-carousel-slider variablewidth="true" ] (Variable width of images in slider. By default value us "false")
 = PRO Features Added : =
-
-* Added 16 Pro designs
-* 10 Image Slider Designs
-* 6 Image Carousel Slider
-* Display content with image and link in Carousel mode   
-* Simple & Easy to Use
-
-Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
-
+> <strong>Premium Version</strong><br>
+>
+> * Added 16 Pro designs
+> * 10 Image Slider Designs
+> * 6 Image Carousel Slider
+> * Display content with image and link in Carousel mode   
+> * Simple & Easy to Use
+>
+> Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+>
 
 = Features include =
 
