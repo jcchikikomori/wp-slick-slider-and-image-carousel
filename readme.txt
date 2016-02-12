@@ -54,7 +54,6 @@ Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slid
 <code>[slick-slider]</code>
 
 * **limit** : [slick-slider limit="-1"] (Limit define the number of images to be display at a time. By default set to "-1" ie all images. eg. if you want to display only 5 images then set limit to limit="5")
-* **design** : [slick-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).
 * **category**: [slick-slider category="category_ID"] ( ie Display slider by their category ID ).
 * **show_content** : [slick-slider show_content="true" ] (Display content OR not. By default value is "True". Options are "ture OR false").
 * **Pagination and arrows** : [slick-slider dots="false" arrows="false"]
