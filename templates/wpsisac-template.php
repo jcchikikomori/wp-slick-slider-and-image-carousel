@@ -1,15 +1,21 @@
 <?php 
-function get_wpsisac_slider( $atts, $content = null ){          
+function get_wpsisac_slider( $atts, $content = null ){          
+
       extract(shortcode_atts(array(
 	    "limit"    => '',
 		"category" => '',
-		"design" => '',		"show_content" => '',       
+		"design" => '',
+		"show_content" => '',       
 		"dots"     			=> '',
-		"arrows"     		=> '',		"autoplay"     		=> '',	
-		"autoplay_interval"  => '',		"speed"             => '',
+		"arrows"     		=> '',
+		"autoplay"     		=> '',	
+		"autoplay_interval"  => '',
+		"speed"             => '',
 		"fade"		        => '',
-		"sliderheight"     => '',
-	), $atts));
+		"sliderheight"     => '',
+
+	), $atts));
+
     if( $limit ) { 
 		$posts_per_page = $limit; 
 	} else {
@@ -20,37 +26,45 @@ function get_wpsisac_slider( $atts, $content = null ){
 		$cat = $category; 
 	} else {
 		$cat = '';
-	}	
+	}	
+
 	if( $design ) { 
 		$slidercdesign = $design; 
 	} else {
 		$slidercdesign = 'design-1';
-	}	
+	}	
+
     if( $show_content ) { 
         $showContent = $show_content; 
     } else {
         $showContent = 'true';
-    }
+    }
+
+
 	if( $dots ) { 
 		$dotsv = $dots; 
 	} else {
 		$dotsv = 'true';
-	}
+	}
+
 	if( $arrows ) {
 		$arrowsv = $arrows; 
 	} else {
 		$arrowsv = 'true';
-	}	
+	}	
+
 	if( $autoplay ) { 
 		$autoplayv = $autoplay;
 	} else {
 		$autoplayv = 'true';
-	}	
+	}	
+
 	if( $autoplay_interval ) { 
 		$autoplayIntervalv = $autoplay_interval; 
 	} else {
 		$autoplayIntervalv = '3000';
-	}	
+	}	
+
 	if( $speed ) { 
 		$speedv = $speed;
 	} else {
@@ -60,16 +74,20 @@ function get_wpsisac_slider( $atts, $content = null ){
 		$fadev = $fade;
 	} else {
 		$fadev = 'false';
-	}if( $sliderheight ) { 
+	}
+if( $sliderheight ) { 
 		$sliderheightv = $sliderheight;
 	} else {
 		$sliderheightv = '500';
 	}
 
-	ob_start();	
+	ob_start();	
+
+	$unique 		= wpsisac_get_unique();
 	$post_type 		= 'slick_slider';
 	$orderby 		= 'post_date';
-	$order 			= 'DESC';		
+	$order 			= 'DESC';		
+
         $args = array ( 
             'post_type'      => $post_type, 
             'orderby'        => $orderby, 
@@ -81,11 +99,14 @@ function get_wpsisac_slider( $atts, $content = null ){
             	$args['tax_query'] = array( array( 'taxonomy' => 'wpsisac_slider-category', 'field' => 'id', 'terms' => $cat) );
             }        
       $query = new WP_Query($args);
-      $post_count = $query->post_count;         
+      $post_count = $query->post_count;         
+
              if ( $query->have_posts() ) :
 			 ?>
-		<div class="wpsisac-slick-slider <?php echo $slidercdesign; ?>">
-				<?php while ( $query->have_posts() ) : $query->the_post();				switch ($slidercdesign) {
+		<div class="wpsisac-slick-slider-<?php echo $unique; ?> wpsisac-slick-slider <?php echo $slidercdesign; ?>">
+				<?php while ( $query->have_posts() ) : $query->the_post();
+
+				switch ($slidercdesign) {
 				 case "design-1":
 					include('designs/design-1.php');
 					break;
@@ -101,11 +122,16 @@ function get_wpsisac_slider( $atts, $content = null ){
 					case "design-5":
 					include('designs/design-5.php');
 					break;	
-				 default:		 
-						include('designs/design-1.php');
-					}
-					endwhile; ?>
-		  </div><!-- #post-## -->		
+				 default:		 
+
+						include('designs/design-1.php');
+
+					}
+
+					endwhile; ?>
+
+		  </div><!-- #post-## -->		
+
 		  <?php
             endif; 
              wp_reset_query(); 	
@@ -114,7 +140,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 <script type="text/javascript">
 
 		jQuery(document).ready(function(){
-		jQuery('.wpsisac-slick-slider.<?php echo $slidercdesign; ?>').slick({
+		jQuery('.wpsisac-slick-slider-<?php echo $unique; ?>').slick({
 
 			dots: <?php echo $dotsv; ?>,
 			infinite: true,
@@ -133,9 +159,10 @@ function get_wpsisac_slider( $atts, $content = null ){
 });
 	});
 
-	</script>				 <?php
-		return ob_get_clean();			             
-	}
-add_shortcode('slick-slider','get_wpsisac_slider');
-
-
+	</script>				 
+<?php
+		return ob_get_clean();			             
+
+	}
+
+add_shortcode('slick-slider','get_wpsisac_slider');

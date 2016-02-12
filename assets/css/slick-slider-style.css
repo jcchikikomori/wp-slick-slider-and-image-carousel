@@ -1,4 +1,4 @@
-.column, .columns {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.wpcolumn, .wpcolumns {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .wpsisac-slick-slider, .wpsisac-slick-carousal{clear:both;}
 .wpsisac-slick-slider{background:#f1f1f1;}
 .wpsisac-slick-slider h1{margin:5px 0 !important; }
@@ -101,15 +101,15 @@ border:1px solid #fff; text-transform:uppercase}
 
 img { max-width:100% ;  height: auto; }
 img {  -ms-interpolation-mode: bicubic; }
-.column,
-.columns {  padding-left: 0.9375em;  padding-right: 0.9375em;  width: 100%;  float: left; }
+.wpcolumn,
+.wpcolumns {  padding-left: 0.9375em;  padding-right: 0.9375em;  width: 100%;  float: left; }
 
 @media only screen {
-  .column,  .columns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em; float: left; }
+  .wpcolumn,  .wpcolumns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em; float: left; }
    }
  @media only screen and (min-width: 40.0625em) {  
-  .column,
-  .columns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em;float: left; }
+  .wpcolumn,
+  .wpcolumns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em;float: left; }
   .medium-1 {    width: 8.33333%; }
   .medium-2 {    width: 16.66667%; }
   .medium-3 {    width: 25%; }
@@ -135,14 +135,14 @@ img {  -ms-interpolation-mode: bicubic; }
   .medium-offset-10 {    margin-left: 83.33333% !important; }
   .medium-offset-11 {    margin-left: 91.66667% !important; }
 
-  .column.medium-centered:last-child,
-  .columns.medium-centered:last-child {
+  .wpcolumn.medium-centered:last-child,
+  .wpcolumns.medium-centered:last-child {
     float: none; }
-  .column.medium-uncentered:last-child,
-  .columns.medium-uncentered:last-child {
+  .wpcolumn.medium-uncentered:last-child,
+  .wpcolumns.medium-uncentered:last-child {
     float: left; }
-  .column.medium-uncentered.opposite,
-  .columns.medium-uncentered.opposite {
+  .wpcolumn.medium-uncentered.opposite,
+  .wpcolumns.medium-uncentered.opposite {
     float: right; }
 
    }

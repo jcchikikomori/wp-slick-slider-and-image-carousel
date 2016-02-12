@@ -7,42 +7,42 @@ function register_wpsisac_slider_submenu_page() {
 function register_wpsisac_slider_page_callback() {
 
 	$result ='<div class="wrap"><div id="icon-tools" class="icon32"></div><h2 style="padding:15px 0">Slider Designs</h2></div>
-	<div class="medium-12 columns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
+	<div class="medium-12 wpcolumns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
 				<p><a href="http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
-				<div class="medium-12 columns"><h3>Free Designs</h3></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-1.jpg"><p><code>[slick-slider design="design-1"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-2.jpg"><p><code>[slick-slider design="design-2"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-3.jpg"><p><code>[slick-slider design="design-3"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-4.jpg"><p><code>[slick-slider design="design-4"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-5.jpg"><p><code>[slick-slider design="design-5"]</code></p></div></div>
+				<div class="medium-12 wpcolumns"><h3>Free Designs</h3></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-1.jpg"><p><code>[slick-slider design="design-1"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-2.jpg"><p><code>[slick-slider design="design-2"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-3.jpg"><p><code>[slick-slider design="design-3"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-4.jpg"><p><code>[slick-slider design="design-4"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-5.jpg"><p><code>[slick-slider design="design-5"]</code></p></div></div>
 				
-				<div class="medium-4 columns"><div class="postdesigns"><h2>Carousel Designs</h2><img  src="'.plugin_dir_url( __FILE__ ).'images/design-6.jpg"><p><code>[slick-carousel-slider] OR [slick-carousel-slider centermode="true"] OR [slick-carousel-slider variablewidth="true"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><h2>Carousel Designs</h2><img  src="'.plugin_dir_url( __FILE__ ).'images/design-6.jpg"><p><code>[slick-carousel-slider] OR [slick-carousel-slider centermode="true"] OR [slick-carousel-slider variablewidth="true"]</code></p></div></div>
 				
-				<div class="medium-12 columns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
+				<div class="medium-12 wpcolumns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
 				<p><a href="http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
-				<div class="medium-12 columns"><h3>Complete shortcode for Slider:</h3><p><code>[slick-slider  design="prodesign-1" category="8" show_content="true" limit="5"
+				<div class="medium-12 wpcolumns"><h3>Complete shortcode for Slider:</h3><p><code>[slick-slider  design="prodesign-1" category="8" show_content="true" limit="5"
  dots="true" arrows="true" autoplay="true" sliderheight="400" autoplay_interval="5000" speed="1000" effect="false" loop="true"]</code></p></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-1.jpg"><p><code>[slick-slider design="prodesign-1"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-2.jpg"><p><code>[slick-slider design="prodesign-2"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-3.jpg"><p><code>[slick-slider design="prodesign-3"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-4.jpg"><p><code>[slick-slider design="prodesign-4"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-5.jpg"><p><code>[slick-slider design="prodesign-5"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-6.jpg"><p><code>[slick-slider design="prodesign-6"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-7.jpg"><p><code>[slick-slider design="prodesign-7"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-8.jpg"><p><code>[slick-slider design="prodesign-8"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-9.jpg"><p><code>[slick-slider design="prodesign-9"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-10.jpg"><p><code>[slick-slider design="prodesign-10"]</code></p></div></div>
-				<div class="medium-12 columns">
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-1.jpg"><p><code>[slick-slider design="prodesign-1"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-2.jpg"><p><code>[slick-slider design="prodesign-2"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-3.jpg"><p><code>[slick-slider design="prodesign-3"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-4.jpg"><p><code>[slick-slider design="prodesign-4"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-5.jpg"><p><code>[slick-slider design="prodesign-5"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-6.jpg"><p><code>[slick-slider design="prodesign-6"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-7.jpg"><p><code>[slick-slider design="prodesign-7"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-8.jpg"><p><code>[slick-slider design="prodesign-8"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-9.jpg"><p><code>[slick-slider design="prodesign-9"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-10.jpg"><p><code>[slick-slider design="prodesign-10"]</code></p></div></div>
+				<div class="medium-12 wpcolumns">
 				<h3>Complete shortcode for Carousel Slider:</h3><p><code>[slick-carousel-slider  design="prodesign-11" category="8" limit="5"
  slidestoshow="4" slidestoscroll="1" dots="true" image_size="large" show_content="true" arrows="true" autoplay="true"  autoplay_interval="5000" speed="1000" centermode="true" variablewidth="true" loop="true"]</code></p></div>
 
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-11.jpg"><p><code>[slick-carousel-slider design="prodesign-11"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-12.jpg"><p><code>[slick-carousel-slider design="prodesign-12"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-13.jpg"><p><code>[slick-carousel-slider design="prodesign-13"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-14.jpg"><p><code>[slick-carousel-slider design="prodesign-14"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-15.jpg"><p><code>[slick-carousel-slider design="prodesign-15"]</code></p></div></div>
-				<div class="medium-4 columns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-16.jpg"><p><code>[slick-carousel-slider design="prodesign-16"]</code></p></div></div>
-				<div class="medium-12 columns"><h2>Check the demo</h2>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-11.jpg"><p><code>[slick-carousel-slider design="prodesign-11"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-12.jpg"><p><code>[slick-carousel-slider design="prodesign-12"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-13.jpg"><p><code>[slick-carousel-slider design="prodesign-13"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-14.jpg"><p><code>[slick-carousel-slider design="prodesign-14"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-15.jpg"><p><code>[slick-carousel-slider design="prodesign-15"]</code></p></div></div>
+				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-16.jpg"><p><code>[slick-carousel-slider design="prodesign-16"]</code></p></div></div>
+				<div class="medium-12 wpcolumns"><h2>Check the demo</h2>
 				<p><strong>Check Demo Link</strong> <a href="http://demo.wponlinesupport.com/prodemo/pro-wp-slick-slider-and-carousel-demo/" target="_blank">Pro WP Slick Slider and Image Carousel</a></div>';
 				
 				
@@ -54,11 +54,11 @@ function register_wpsisac_slider_admin_style(){
 	?>
 	<style type="text/css">
 	.postdesigns{-moz-box-shadow: 0 0 5px #ddd;-webkit-box-shadow: 0 0 5px#ddd;box-shadow: 0 0 5px #ddd; background:#fff; padding:10px;  margin-bottom:15px;}
-	.column, .columns {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  box-sizing: border-box;}
+	.wpcolumn, .wpcolumns {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  box-sizing: border-box;}
 .postdesigns img{width:100%; height:auto;}
 @media only screen and (min-width: 40.0625em) {  
-  .column,
-  .columns {position: relative;padding-left:10px;padding-right:10px;float: left; }
+  .wpcolumn,
+  .wpcolumns {position: relative;padding-left:10px;padding-right:10px;float: left; }
   .medium-1 {    width: 8.33333%; }
   .medium-2 {    width: 16.66667%; }
   .medium-3 {    width: 25%; }

@@ -68,7 +68,7 @@ function wpsisac_slider_rewrite_flush() {
 }
 register_activation_hook( __FILE__, 'wpsisac_slider_rewrite_flush' );
 
-// Manage Category Shortcode Columns
+// Manage Category Shortcode wpcolumns
 add_filter("manage_wpsisac_slider-category_custom_column", 'wpsisac_slider_category_columns', 10, 3);
 add_filter("manage_edit-wpsisac_slider-category_columns", 'wpsisac_slider_category_manage_columns'); 
 function wpsisac_slider_category_manage_columns($theme_columns) {

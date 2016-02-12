@@ -6,12 +6,16 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author URI: http://www.wponlinesupport.com/
  *
  * @package WordPress
  * @author WP Online Support
- */
+ */
+
+if( !defined('WPSISAC_VERSION') ){
+  define( 'WPSISAC_VERSION', '1.2.2' ); // Plugin version
+}
 
 register_activation_hook( __FILE__, 'free_wpsisac_install_premium_version' );
 function free_wpsisac_install_premium_version(){
@@ -40,18 +44,28 @@ add_action('plugins_loaded', 'wpsisac_load_textdomain');
 function wpsisac_load_textdomain() {
 	load_plugin_textdomain( 'wp-slick-slider-and-image-carousel', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
 } 
+
+/**
+ * Function to get plugin image sizes array
+ * 
+ * @package WP Slick Slider and Image Carousel
+ * @since 1.2.2
+ */
+function wpsisac_get_unique() {
+  static $unique = 0;
+  $unique++;
+
+  return $unique;
+}
  
 add_action( 'wp_enqueue_scripts','wpsisacstyle_css' );
-	function wpsisacstyle_css() {
-		wp_enqueue_script( 'wpsisac_slick_jquery', plugin_dir_url( __FILE__ ) . 'assets/js/slick.min.js', array( 'jquery' ) );
-		wp_enqueue_style( 'wpsisac_slick_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick.css');
-  		wp_enqueue_style( 'wpsisac_recent_post_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick-slider-style.css'); 		
+function wpsisacstyle_css() {
+		wp_enqueue_script( 'wpsisac_slick_jquery', plugin_dir_url( __FILE__ ) . 'assets/js/slick.min.js', array( 'jquery' ), WPSISAC_VERSION );
+		wp_enqueue_style( 'wpsisac_slick_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick.css', array(), WPSISAC_VERSION );
+  	wp_enqueue_style( 'wpsisac_recent_post_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick-slider-style.css', array(), WPSISAC_VERSION);
 }
+
 require_once( 'wpsisac-slider-custom-post.php' );
 require_once( 'templates/wpsisac-template.php' );
 require_once( 'templates/wpsisac-carousel-template.php' );
-require_once( 'wpsisac_post_menu_function.php' );
-
-
-
-
+require_once( 'wpsisac_post_menu_function.php' );
