@@ -8,7 +8,7 @@ function register_wpsisac_slider_page_callback() {
 
 	$result ='<div class="wrap"><div id="icon-tools" class="icon32"></div><h2 style="padding:15px 0">Slider Designs</h2></div>
 	<div class="medium-12 wpcolumns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
-				<p><a href="http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
+				<p><a href="http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
 				<div class="medium-12 wpcolumns"><h3>Free Designs</h3></div>
 				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-1.jpg"><p><code>[slick-slider design="design-1"]</code></p></div></div>
 				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-2.jpg"><p><code>[slick-slider design="design-2"]</code></p></div></div>
@@ -19,7 +19,7 @@ function register_wpsisac_slider_page_callback() {
 				<div class="medium-4 wpcolumns"><div class="postdesigns"><h2>Carousel Designs</h2><img  src="'.plugin_dir_url( __FILE__ ).'images/design-6.jpg"><p><code>[slick-carousel-slider] OR [slick-carousel-slider centermode="true"] OR [slick-carousel-slider variablewidth="true"]</code></p></div></div>
 				
 				<div class="medium-12 wpcolumns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
-				<p><a href="http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
+				<p><a href="http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
 				<div class="medium-12 wpcolumns"><h3>Complete shortcode for Slider:</h3><p><code>[slick-slider  design="prodesign-1" category="8" show_content="true" limit="5"
  dots="true" arrows="true" autoplay="true" sliderheight="400" autoplay_interval="5000" speed="1000" effect="false" loop="true"]</code></p></div>
 				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-1.jpg"><p><code>[slick-slider design="prodesign-1"]</code></p></div></div>
