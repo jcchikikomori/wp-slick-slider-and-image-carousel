@@ -22,9 +22,9 @@ You can also display image slider on your website header.
 We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of design
 that you like and use.
 
-Check [DEMO](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+Check [DEMO](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 
-Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 
 = You can use 2 shortcodes =
 
@@ -87,7 +87,7 @@ Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slid
 > * Display content with image and link in Carousel mode   
 > * Simple & Easy to Use
 >
-> Check [PRO DEMO and Features](http://wponlinesupport.com/sp_plugin/wp-slick-slider-and-image-carousel/) to know more.
+> Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 >
 
 = Features include =
