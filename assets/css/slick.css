@@ -1,3 +1,6 @@
+.wpsisac-slick-slider{visibility: hidden; opacity:0;  transition:opacity 0.5s linear;  }
+.slick-initialized { visibility: visible; opacity:1; }
+
 .wpsisac-slick-slider .slick-arrow{text-indent:-99999px;}
 .wpsisac-slick-slider button.slick-arrow {background-color: transparent!important; width:30px; height:51px; position:absolute; z-index:999; border:0px !important;
 padding:0 !important; margin:0px !important; border-radius:0px !important}
