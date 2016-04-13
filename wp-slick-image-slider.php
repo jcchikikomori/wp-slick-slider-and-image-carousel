@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author URI: http://www.wponlinesupport.com/
  *
  * @package WordPress
@@ -14,7 +14,7 @@
  */
 
 if( !defined('WPSISAC_VERSION') ){
-  define( 'WPSISAC_VERSION', '1.2.2' ); // Plugin version
+  define( 'WPSISAC_VERSION', '1.2.3' ); // Plugin version
 }
 
 register_activation_hook( __FILE__, 'free_wpsisac_install_premium_version' );
