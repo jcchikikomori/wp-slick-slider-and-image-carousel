@@ -35,7 +35,7 @@ Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slid
 
 <code>[slick-slider  design="design-1" category="8" show_content="true"
  dots="true" arrows="true" autoplay="true" sliderheight="400"
- autoplay_interval="5000" speed="1000" effect="false"]</code>
+ autoplay_interval="5000" speed="1000"]</code>
  
 <code>[slick-carousel-slider  design="design-6" category="8"
  slidestoshow="4" slidestoscroll="1" dots="true"
