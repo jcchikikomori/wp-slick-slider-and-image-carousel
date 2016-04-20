@@ -109,7 +109,8 @@ Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slid
 
 <code>[slick-slider] and [slick-carousel-slider]</code>
 
-
+= How to install : =
+[youtube https://www.youtube.com/watch?v=c9pID1dWON4] 
 
 == Screenshots ==
 
