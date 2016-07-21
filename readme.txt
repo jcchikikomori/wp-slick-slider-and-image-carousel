@@ -81,11 +81,17 @@ Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slid
 = PRO Features Added : =
 > <strong>Premium Version</strong><br>
 >
-> * Added 16 Pro designs
-> * 10 Image Slider Designs
-> * 6 Image Carousel Slider
+> * 20+ predefined stunning designs
+> * 14 Image Slider Designs
+> * 10 Image Carousel Slider Designs
+> * 8 Slider Variable width Designs
+> * Visual Composer Page builder support
+> * Drag & Drop frature to display slide in your order
+> * Custom CSS plugin setting option
+> * Powerful shortcode with strong parameters
 > * Display content with image and link in Carousel mode   
-> * Simple & Easy to Use
+> * Fully Responsive
+> * 100% Multi Language
 >
 > Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 >
