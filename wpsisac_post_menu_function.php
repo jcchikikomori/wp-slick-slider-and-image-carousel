@@ -1,80 +1,108 @@
 <?php
-add_action('admin_menu', 'register_wpsisac_slider_submenu_page');
-function register_wpsisac_slider_submenu_page() {
-	add_submenu_page( 'edit.php?post_type=slick_slider', 'Slider Designs', 'Slider Designs', 'manage_options', 'wpsisac_slider-submenu-page', 'register_wpsisac_slider_page_callback' );
+/**
+ * Pro Designs and Plugins Feed
+ *
+ * @package WP Slick Slider and Image Carousel
+ * @since 1.2.4
+ */
 
-}
-function register_wpsisac_slider_page_callback() {
+// Exit if accessed directly
+if ( !defined( 'ABSPATH' ) ) exit;
 
-	$result ='<div class="wrap"><div id="icon-tools" class="icon32"></div><h2 style="padding:15px 0">Slider Designs</h2></div>
-	<div class="medium-12 wpcolumns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
-				<p><a href="http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
-				<div class="medium-12 wpcolumns"><h3>Free Designs</h3></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-1.jpg"><p><code>[slick-slider design="design-1"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-2.jpg"><p><code>[slick-slider design="design-2"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-3.jpg"><p><code>[slick-slider design="design-3"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-4.jpg"><p><code>[slick-slider design="design-4"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/design-5.jpg"><p><code>[slick-slider design="design-5"]</code></p></div></div>
-				
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><h2>Carousel Designs</h2><img  src="'.plugin_dir_url( __FILE__ ).'images/design-6.jpg"><p><code>[slick-carousel-slider] OR [slick-carousel-slider centermode="true"] OR [slick-carousel-slider variablewidth="true"]</code></p></div></div>
-				
-				<div class="medium-12 wpcolumns"><h1>Buy Pro Designs of WP Slick Slider and Carousel</h1>
-				<p><a href="http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/" target="_blank"><img  src="'.plugin_dir_url( __FILE__ ).'images/slick-slider.png"></a></p></div>
-				<div class="medium-12 wpcolumns"><h3>Complete shortcode for Slider:</h3><p><code>[slick-slider  design="prodesign-1" category="8" show_content="true" limit="5"
- dots="true" arrows="true" autoplay="true" sliderheight="400" autoplay_interval="5000" speed="1000" effect="false" loop="true"]</code></p></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-1.jpg"><p><code>[slick-slider design="prodesign-1"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-2.jpg"><p><code>[slick-slider design="prodesign-2"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-3.jpg"><p><code>[slick-slider design="prodesign-3"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-4.jpg"><p><code>[slick-slider design="prodesign-4"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-5.jpg"><p><code>[slick-slider design="prodesign-5"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-6.jpg"><p><code>[slick-slider design="prodesign-6"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-7.jpg"><p><code>[slick-slider design="prodesign-7"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-8.jpg"><p><code>[slick-slider design="prodesign-8"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-9.jpg"><p><code>[slick-slider design="prodesign-9"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-10.jpg"><p><code>[slick-slider design="prodesign-10"]</code></p></div></div>
-				<div class="medium-12 wpcolumns">
-				<h3>Complete shortcode for Carousel Slider:</h3><p><code>[slick-carousel-slider  design="prodesign-11" category="8" limit="5"
- slidestoshow="4" slidestoscroll="1" dots="true" image_size="large" show_content="true" arrows="true" autoplay="true"  autoplay_interval="5000" speed="1000" centermode="true" variablewidth="true" loop="true"]</code></p></div>
+// Action to add menu
+add_action('admin_menu', 'wpsisac_register_design_page');
 
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-11.jpg"><p><code>[slick-carousel-slider design="prodesign-11"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-12.jpg"><p><code>[slick-carousel-slider design="prodesign-12"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-13.jpg"><p><code>[slick-carousel-slider design="prodesign-13"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-14.jpg"><p><code>[slick-carousel-slider design="prodesign-14"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-15.jpg"><p><code>[slick-carousel-slider design="prodesign-15"]</code></p></div></div>
-				<div class="medium-4 wpcolumns"><div class="postdesigns"><img  src="'.plugin_dir_url( __FILE__ ).'images/prodesign-16.jpg"><p><code>[slick-carousel-slider design="prodesign-16"]</code></p></div></div>
-				<div class="medium-12 wpcolumns"><h2>Check the demo</h2>
-				<p><strong>Check Demo Link</strong> <a href="http://demo.wponlinesupport.com/prodemo/pro-wp-slick-slider-and-carousel-demo/" target="_blank">Pro WP Slick Slider and Image Carousel</a></div>';
-				
-				
-	echo $result;
-
+/**
+ * Register plugin design page in admin menu
+ * 
+ * @package WP Slick Slider and Image Carousel
+ * @since 1.2.4
+ */
+function wpsisac_register_design_page() {
+	add_submenu_page( 'edit.php?post_type='.WPSISAC_POST_TYPE, __('Slider Designs', 'wp-slick-slider-and-image-carousel'), __('Slider Designs', 'wp-slick-slider-and-image-carousel'), 'manage_options', 'wpsisac-designs', 'wpsisac_designs_page' );
 }
 
-function register_wpsisac_slider_admin_style(){
+/**
+ * Function to display plugin design HTML
+ * 
+ * @package WP Slick Slider and Image Carousel
+ * @since 1.2.4
+ */
+function wpsisac_designs_page() {
+
+	$wpsisac_feed_tabs = array(
+								'design-feed' 	=> __('Plugin Designs', 'wp-slick-slider-and-image-carousel'),
+								'plugins-feed' 	=> __('Our Plugins', 'wp-slick-slider-and-image-carousel')
+							);
+
+	
+	$active_tab = isset($_GET['tab']) ? $_GET['tab'] : 'design-feed';
 	?>
-	<style type="text/css">
-	.postdesigns{-moz-box-shadow: 0 0 5px #ddd;-webkit-box-shadow: 0 0 5px#ddd;box-shadow: 0 0 5px #ddd; background:#fff; padding:10px;  margin-bottom:15px;}
-	.wpcolumn, .wpcolumns {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  box-sizing: border-box;}
-.postdesigns img{width:100%; height:auto;}
-@media only screen and (min-width: 40.0625em) {  
-  .wpcolumn,
-  .wpcolumns {position: relative;padding-left:10px;padding-right:10px;float: left; }
-  .medium-1 {    width: 8.33333%; }
-  .medium-2 {    width: 16.66667%; }
-  .medium-3 {    width: 25%; }
-  .medium-4 {    width: 33.33333%; }
-  .medium-5 {    width: 41.66667%; }
-  .medium-6 {    width: 50%; }
-  .medium-7 {    width: 58.33333%; }
-  .medium-8 {    width: 66.66667%; }
-  .medium-9 {    width: 75%; }
-  .medium-10 {    width: 83.33333%; }
-  .medium-11 {    width: 91.66667%; }
-  .medium-12 {    width: 100%; } 
-   }
-	</style>
+	
+	<div class="wrap wpsisac-wrap">
 
-<?php }
+		<h2 class="nav-tab-wrapper">
+			<?php
+			foreach ($wpsisac_feed_tabs as $tab_key => $tab_val) {
 
-add_action('admin_head', 'register_wpsisac_slider_admin_style');
+				$active_cls = ($tab_key == $active_tab) ? 'nav-tab-active' : '';
+				$tab_link 	= add_query_arg( array( 'post_type' => WPSISAC_POST_TYPE, 'page' => 'wpsisac-designs', 'tab' => $tab_key), admin_url('edit.php') );
+			?>
 
+			<a class="nav-tab <?php echo $active_cls; ?>" href="<?php echo $tab_link; ?>"><?php echo $tab_val; ?></a>
+
+			<?php } ?>
+		</h2>
+
+		<div class="wpsisac-tab-cnt-wrp">
+		<?php 
+			if( isset($_GET['tab']) && $_GET['tab'] == 'plugins-feed' ) {
+				echo wpsisac_get_design( 'plugins-feed' );
+			} else {
+				echo wpsisac_get_design();
+			}
+		?>
+		</div><!-- end .wpsisac-tab-cnt-wrp -->
+
+	</div><!-- end .wpsisac-wrap -->
+
+<?php
+}
+
+/**
+ * Gets the plugin design part feed
+ *
+ * @package WP Slick Slider and Image Carousel
+ * @since 1.2.4
+ */
+function wpsisac_get_design( $feed_type = '' ) {
+	
+	$active_tab 	= isset($_GET['tab']) ? $_GET['tab'] : 'design-feed';
+	$transient_key 	= 'wpsisac_' . $active_tab;
+	
+	// Feed URL
+	if( $feed_type == 'plugins-feed' ) {
+		$url 			= 'http://wponlinesupport.com/plugin-data-api/plugins-data.php';
+		$transient_key 	= 'wpos_plugins_feed';
+	} else {
+		$url = 'http://wponlinesupport.com/plugin-data-api/wp-slick-slider-and-image-carousel/wp-slick-slider-and-image-carousel.php';
+	}
+
+	$cache = get_transient( $transient_key );
+	
+	if ( false === $cache ) {
+		
+		$feed 			= wp_remote_get( esc_url_raw( $url ), array( 'timeout' => 120, 'sslverify' => false ) );
+		$response_code 	= wp_remote_retrieve_response_code( $feed );
+		
+		if ( ! is_wp_error( $feed ) && $response_code == 200 ) {
+			if ( isset( $feed['body'] ) && strlen( $feed['body'] ) > 0 ) {
+				$cache = wp_remote_retrieve_body( $feed );
+				set_transient( $transient_key, $cache, 172800 );
+			}
+		} else {
+			$cache = '<div class="error"><p>' . __( 'There was an error retrieving the data from the server. Please try again later.', 'wp-slick-slider-and-image-carousel' ) . '</div>';
+		}
+	}
+	return $cache;
+}

@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.2.3
+ * Version: 1.2.4
  * Author URI: http://www.wponlinesupport.com/
  *
  * @package WordPress
@@ -14,7 +14,10 @@
  */
 
 if( !defined('WPSISAC_VERSION') ){
-  define( 'WPSISAC_VERSION', '1.2.3' ); // Plugin version
+    define( 'WPSISAC_VERSION', '1.2.4' ); // Plugin version
+}
+if( !defined( 'WPSISAC_POST_TYPE' ) ) {
+    define( 'WPSISAC_POST_TYPE', 'slick_slider' ); // Plugin post type
 }
 
 register_activation_hook( __FILE__, 'free_wpsisac_install_premium_version' );
@@ -57,12 +60,18 @@ function wpsisac_get_unique() {
 
   return $unique;
 }
- 
+
 add_action( 'wp_enqueue_scripts','wpsisacstyle_css' );
 function wpsisacstyle_css() {
-		wp_enqueue_script( 'wpsisac_slick_jquery', plugin_dir_url( __FILE__ ) . 'assets/js/slick.min.js', array( 'jquery' ), WPSISAC_VERSION );
-		wp_enqueue_style( 'wpsisac_slick_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick.css', array(), WPSISAC_VERSION );
-  	wp_enqueue_style( 'wpsisac_recent_post_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick-slider-style.css', array(), WPSISAC_VERSION);
+    
+    // Registring slick slider script
+    if( !wp_script_is( 'wpos-slick-jquery', 'registered' ) ) {
+        wp_register_script( 'wpos-slick-jquery', plugin_dir_url( __FILE__ ).'assets/js/slick.min.js', array('jquery'), WPSISAC_VERSION, true );
+        wp_enqueue_script( 'wpos-slick-jquery' );
+    }
+
+    wp_enqueue_style( 'wpsisac_slick_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick.css', array(), WPSISAC_VERSION );
+    wp_enqueue_style( 'wpsisac_recent_post_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick-slider-style.css', array(), WPSISAC_VERSION);
 }
 
 require_once( 'wpsisac-slider-custom-post.php' );
