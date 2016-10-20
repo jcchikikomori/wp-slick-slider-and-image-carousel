@@ -13,9 +13,13 @@ function get_wpsisac_slider( $atts, $content = null ){
 		"speed"             => '',
 		"fade"		        => '',
 		"sliderheight"     => '',
+		
 
 	), $atts));
-
+	
+	// required enqueue
+	wp_enqueue_script( 'wpos-slick-jquery' );
+	 
     if( $limit ) { 
 		$posts_per_page = $limit; 
 	} else {
@@ -56,7 +60,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	if( $autoplay ) { 
 		$autoplayv = $autoplay;
 	} else {
-		$autoplayv = 'true';
+		$autoplayv = 'false';
 	}	
 
 	if( $autoplay_interval ) { 
@@ -105,7 +109,8 @@ if( $sliderheight ) {
 			 ?>
 		<div class="wpsisac-slick-slider-<?php echo $unique; ?> wpsisac-slick-slider <?php echo $slidercdesign; ?>">
 				<?php while ( $query->have_posts() ) : $query->the_post();
-
+				global $post;
+				$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'full' );
 				switch ($slidercdesign) {
 				 case "design-1":
 					include('designs/design-1.php');

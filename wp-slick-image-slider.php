@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.2.4
+ * Version: 1.2.5
  * Author URI: http://www.wponlinesupport.com/
  *
  * @package WordPress
@@ -14,7 +14,7 @@
  */
 
 if( !defined('WPSISAC_VERSION') ){
-    define( 'WPSISAC_VERSION', '1.2.4' ); // Plugin version
+    define( 'WPSISAC_VERSION', '1.2.5' ); // Plugin version
 }
 if( !defined( 'WPSISAC_POST_TYPE' ) ) {
     define( 'WPSISAC_POST_TYPE', 'slick_slider' ); // Plugin post type
@@ -67,7 +67,6 @@ function wpsisacstyle_css() {
     // Registring slick slider script
     if( !wp_script_is( 'wpos-slick-jquery', 'registered' ) ) {
         wp_register_script( 'wpos-slick-jquery', plugin_dir_url( __FILE__ ).'assets/js/slick.min.js', array('jquery'), WPSISAC_VERSION, true );
-        wp_enqueue_script( 'wpos-slick-jquery' );
     }
 
     wp_enqueue_style( 'wpsisac_slick_style',  plugin_dir_url( __FILE__ ) . 'assets/css/slick.css', array(), WPSISAC_VERSION );
