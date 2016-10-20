@@ -17,16 +17,11 @@ function wpsisac_slider_init() {
   );
   $wpsisac_slider_args = array(
     'labels'              => $wpsisac_slider_labels,
-    'public'              => true,
-    'publicly_queryable'  => true,
-    'exclude_from_search' => false,
+    'public'              => false,    
     'show_ui'             => true,
     'show_in_menu'        => true, 
     'query_var'           => true,
-    'rewrite'             => array( 
-							'slug' => 'slick_slider',
-							'with_front' => false
-							),
+    'rewrite'             => false,
     'capability_type'     => 'post',
     'has_archive'         => true,
     'hierarchical'        => false,
