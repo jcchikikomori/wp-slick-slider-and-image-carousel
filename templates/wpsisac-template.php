@@ -60,7 +60,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	if( $autoplay ) { 
 		$autoplayv = $autoplay;
 	} else {
-		$autoplayv = 'false';
+		$autoplayv = 'true';
 	}	
 
 	if( $autoplay_interval ) { 
