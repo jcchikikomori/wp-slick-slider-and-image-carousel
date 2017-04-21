@@ -26,6 +26,8 @@ Check [DEMO](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-caro
 
 Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 
+Download our all [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-online-support-all-free-34-plugins/?utm_source=wp&event=fd).
+
 = You can use 2 shortcodes =
 
 <code>[slick-slider] and [slick-carousel-slider]</code>
