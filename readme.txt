@@ -2,7 +2,7 @@
 Contributors: wponlinesupport, anoopranawat 
 Tags: wponlinesupport, slick, image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive content slider, carousel, image carousel, carousel slider, content slider, coin slider, touch slider, text slider, responsive slider, responsive slideshow, Responsive Touch Slider, wp slider, wp image slider, wp header image slider, photo slider, responsive photo slider  
 Requires at least: 3.1
-Tested up to: 4.7
+Tested up to: 4.7.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,7 +26,7 @@ Check [DEMO](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-caro
 
 Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 
-Download our all [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-online-support-all-free-34-plugins/?utm_source=wp&event=fd).
+Download all our [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-online-support-all-free-34-plugins/?utm_source=wp&event=fd).
 
 = You can use 2 shortcodes =
 
@@ -131,6 +131,10 @@ Download our all [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-
 
 == Changelog ==
 
+= 1.2.7 (25/04/2017) =
+* [+] Added overlay for design-2
+
+
 = 1.2.6 (07/11/2016) =
 * [+] Added "How it work tab"
 * [-] Removed Pro design tab
@@ -168,6 +172,9 @@ Download our all [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-
 
 
 == Upgrade Notice ==
+
+= 1.2.7 (25/04/2017) =
+* [+] Added overlay for design-2
 
 = 1.2.6 (07/11/2016) =
 * [+] Added "How it work tab"
