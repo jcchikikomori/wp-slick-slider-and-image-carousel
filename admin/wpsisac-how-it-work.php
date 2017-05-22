@@ -2,7 +2,7 @@
 /**
  * Pro Designs and Plugins Feed
  *
- * @package Album and Image Gallery Plus Lightbox
+ * @package WP Slick Slider and Image Carousel
  * @since 1.0.0
  */
 
@@ -15,7 +15,7 @@ add_action('admin_menu', 'wpsisacm_register_design_page');
 /**
  * Register plugin design page in admin menu
  * 
- * @package Album and Image Gallery Plus Lightbox
+ * @package WP Slick Slider and Image Carousel
  * @since 1.0.0
  */
 function wpsisacm_register_design_page() {
@@ -25,7 +25,7 @@ function wpsisacm_register_design_page() {
 /**
  * Function to display plugin design HTML
  * 
- * @package Album and Image Gallery Plus Lightbox
+ * @package WP Slick Slider and Image Carousel
  * @since 1.0.0
  */
 function wpsisacm_designs_page() {
@@ -70,7 +70,7 @@ function wpsisacm_designs_page() {
 /**
  * Gets the plugin design part feed
  *
- * @package Album and Image Gallery Plus Lightbox
+ * @package WP Slick Slider and Image Carousel
  * @since 1.0.0
  */
 function wpsisacm_get_plugin_design( $feed_type = '' ) {
@@ -109,7 +109,7 @@ function wpsisacm_get_plugin_design( $feed_type = '' ) {
 /**
  * Function to get plugin feed tabs
  *
- * @package Album and Image Gallery Plus Lightbox
+ * @package WP Slick Slider and Image Carousel
  * @since 1.0.0
  */
 function wpsisacm_help_tabs() {
@@ -136,7 +136,7 @@ function wpsisacm_help_tabs() {
 /**
  * Function to get 'How It Works' HTML
  *
- * @package Album and Image Gallery Plus Lightbox
+ * @package WP Slick Slider and Image Carousel
  * @since 1.0.0
  */
 function wpsisacm_howitwork_page() { ?>
@@ -153,7 +153,7 @@ function wpsisacm_howitwork_page() { ?>
 		<div id="poststuff">
 			<div id="post-body" class="metabox-holder columns-2">
 			
-				<!--How it workd HTML -->
+				
 				<div id="post-body-content">
 					<div class="metabox-holder">
 						<div class="meta-box-sortables ui-sortable">
@@ -216,13 +216,13 @@ function wpsisacm_howitwork_page() { ?>
 											</tr>
 										</tbody>
 									</table>
-								</div><!-- .inside -->
-							</div><!-- #general -->
-						</div><!-- .meta-box-sortables ui-sortable -->
-					</div><!-- .metabox-holder -->
-				</div><!-- #post-body-content -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				
-				<!--Upgrad to Pro HTML -->
+				
 				<div id="postbox-container-1" class="postbox-container">
 					<div class="metabox-holder wpos-pro-box">
 						<div class="meta-box-sortables ui-sortable">
@@ -247,12 +247,12 @@ function wpsisacm_howitwork_page() { ?>
 									</ul>
 									<a class="button button-primary wpos-button-full" href="https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/?utm_source=hp&event=go_premium" target="_blank"><?php _e('Go Premium ', 'wp-slick-slider-and-image-carousel'); ?></a>	
 									<p><a class="button button-primary wpos-button-full" href="http://demo.wponlinesupport.com/prodemo/pro-wp-slick-slider-and-carousel-demo/?utm_source=hp&event=pro_demo" target="_blank"><?php _e('View PRO Demo ', 'wp-slick-slider-and-image-carousel'); ?></a>			</p>								
-								</div><!-- .inside -->
-							</div><!-- #general -->
-						</div><!-- .meta-box-sortables ui-sortable -->
-					</div><!-- .metabox-holder -->
+								</div>
+							</div>
+						</div>
+					</div>
 
-					<!-- Help to improve this plugin! -->
+					
 					<div class="metabox-holder">
 						<div class="meta-box-sortables ui-sortable">
 							<div class="postbox">
@@ -261,13 +261,13 @@ function wpsisacm_howitwork_page() { ?>
 									</h3>									
 									<div class="inside">										
 										<p>Enjoyed this plugin? You can help by rate this plugin <a href="https://wordpress.org/support/plugin/wp-slick-slider-and-image-carousel/reviews/?filter=5" target="_blank">5 stars!</a></p>
-									</div><!-- .inside -->
-							</div><!-- #general -->
-						</div><!-- .meta-box-sortables ui-sortable -->
-					</div><!-- .metabox-holder -->
-				</div><!-- #post-container-1 -->
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			</div><!-- #post-body -->
-		</div><!-- #poststuff -->
-	</div><!-- #post-box-container -->
+			</div>
+		</div>
+	</div>
 <?php }

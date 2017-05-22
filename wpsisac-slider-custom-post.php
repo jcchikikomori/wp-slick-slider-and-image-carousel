@@ -15,7 +15,7 @@ function wpsisac_slider_init() {
     'not_found_in_trash'   => __('No Slick Slider Items found in Trash', 'wp-slick-slider-and-image-carousel'), 
     '_builtin'             =>  false, 
     'parent_item_colon'    => '',  
-	'menu_name'          => _x( 'Slick Slider', 'admin menu', 'wp-slick-slider-and-image-carousel' )
+	'menu_name'            => _x( 'Slick Slider', 'admin menu', 'wp-slick-slider-and-image-carousel' )
   );
 
   $wpsisac_slider_args = array(

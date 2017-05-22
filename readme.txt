@@ -2,7 +2,7 @@
 Contributors: wponlinesupport, anoopranawat 
 Tags: wponlinesupport, slick, image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive content slider, carousel, image carousel, carousel slider, content slider, coin slider, touch slider, text slider, responsive slider, responsive slideshow, Responsive Touch Slider, wp slider, wp image slider, wp header image slider, photo slider, responsive photo slider  
 Requires at least: 3.1
-Tested up to: 4.7.4
+Tested up to: 4.7.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -131,6 +131,9 @@ Download all our [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-
 
 == Changelog ==
 
+= 1.2.8 (22/05/2017) =
+* [+] RTL Supported
+
 = 1.2.7 (25/04/2017) =
 * [+] Added overlay for design-2
 
@@ -172,6 +175,9 @@ Download all our [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-
 
 
 == Upgrade Notice ==
+
+= 1.2.8 (22/05/2017) =
+* [+] RTL Supported
 
 = 1.2.7 (25/04/2017) =
 * [+] Added overlay for design-2
