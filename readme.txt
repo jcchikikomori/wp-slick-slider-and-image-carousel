@@ -7,9 +7,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-A quick, easy way to add and display mulipale WP Slick Slider and carousel using a shortcode.
- 
+A quick, easy way to add and display mulipale WP Slick Slider and carousel using a shortcode. 
 
 == Description ==
 
