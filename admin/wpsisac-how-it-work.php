@@ -233,12 +233,12 @@ function wpsisacm_howitwork_page() { ?>
 								</h3>
 								<div class="inside">										
 									<ul class="wpos-list">
-										<li>30+ Beautiful Designs</li>
+										<li>90+ Predefined stunning designs</li>
 										<li>Visual composer support</li>
 										<li>Drag & Drop order change</li>
-										<li>24+ Slider designs</li>
-										<li>18+ Carousel and center mode designs</li>
-										<li>18+ Variable width designs</li>
+										<li>30 Image Slider Designs</li>
+										<li>30 Image Carousel and Center Slider Designs</li>
+										<li>33 Slider Variable width Designs</li>
 										<li>Custom css</li>									
 										<li>Slider Center Mode Effect</li>
 										<li>Slider RTL support</li>
