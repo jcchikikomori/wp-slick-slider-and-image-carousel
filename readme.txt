@@ -81,10 +81,10 @@ Download all our [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-
 = PRO Features Added : =
 > <strong>Premium Version</strong><br>
 >
-> * 30+ Predefined stunning designs
-> * 24+ Image Slider Designs
-> * 19+ Image Carousel and Center Slider Designs
-> * 18+ Slider Variable width Designs
+> * 90+ Predefined stunning designs
+> * 30 Image Slider Designs
+> * 30 Image Carousel and Center Slider Designs
+> * 33 Slider Variable width Designs
 > * Visual Composer Page builder support
 > * Drag & Drop frature to display slide in your order
 > * Custom CSS plugin setting option
