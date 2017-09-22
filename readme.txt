@@ -28,19 +28,6 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 <code>[slick-slider] and [slick-carousel-slider]</code>
 
-
-= Complete shortcode  is =
-
-<code>[slick-slider  design="design-1" category="8" show_content="true"
- dots="true" arrows="true" autoplay="true" sliderheight="400"
- autoplay_interval="5000" speed="1000"]</code>
- 
-<code>[slick-carousel-slider  design="design-6" category="8"
- slidestoshow="4" slidestoscroll="1" dots="true"
- arrows="true" autoplay="true"  autoplay_interval="5000"
- speed="1000" centermode="true" variablewidth="true"]</code> 
-
-
 = Here is Template code =
 
 <code><?php echo do_shortcode('[slick-slider]'); ?>  and
@@ -59,6 +46,7 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 * **Slide Speed**: [slick-slider speed="3000"]
 * **fade** : [slick-slider fade="true" ] (Slider Fade effect. By default effect is slide. If you set fade="true" then effect change from slide to fade ).
 * **sliderheight** : [slick-slider sliderheight="400" ] (Slider height. By default given 500px height.)
+* **rtl** : [slick-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
 
 = Use Following parameters with shortcode =
 
@@ -75,6 +63,8 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 * **Slide Speed**: [slick-carousel-slider speed="3000"]
 * **centermode** : [slick-carousel-slider centermode="true" ] ( Display main image on center. By default value is "false" ).
 * **variablewidth** : [slick-carousel-slider variablewidth="true" ] (Variable width of images in slider. By default value us "false")
+* **sliderheight** : [slick-carousel-slider sliderheight="400" ] (Slider height. By default given 500px height.)
+* **rtl** : [slick-carousel-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
 
 = PRO Features Added : =
 > <strong>Premium Version</strong><br>
@@ -127,6 +117,13 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 == Changelog ==
 
+= 1.3 (22/09/2017) =
+* [+] Added **sliderheight** parameter in shortcode <code>[slick-carousel-slider]</code>
+* [*] RTL made better to work with RTL websites
+* [*] Center mode and variablewidth improved better as per usres feedback 
+* [*]  **sliderheight** parameter improved
+
+
 = 1.2.8 (22/05/2017) =
 * [+] RTL Supported
 
@@ -171,6 +168,12 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 
 == Upgrade Notice ==
+
+= 1.3 (22/09/2017) =
+* [+] Added **sliderheight** parameter in shortcode <code>[slick-carousel-slider]</code>
+* [*] RTL made better to work with RTL websites
+* [*] Center mode and variablewidth improved better as per usres feedback 
+* [*]  **sliderheight** parameter improved
 
 = 1.2.8 (22/05/2017) =
 * [+] RTL Supported

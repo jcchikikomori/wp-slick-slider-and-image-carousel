@@ -210,7 +210,7 @@ function wpsisacm_howitwork_page() { ?>
 												</th>
 												<td>
 													<p><?php _e('Check plugin document for shortcode parameters and demo for designs.', 'wp-slick-slider-and-image-carousel'); ?></p> <br/>
-													<a class="button button-primary" href="wponlinesupport.com/plugins-documentationt/wp-slick-slider-and-image-carousel/?utm_source=hp&event=doc" target="_blank"><?php _e('Documentation', 'wp-slick-slider-and-image-carousel'); ?></a>									
+													<a class="button button-primary" href="http://docs.wponlinesupport.com/wp-slick-slider-and-image-carousel/" target="_blank"><?php _e('Documentation', 'wp-slick-slider-and-image-carousel'); ?></a>									
 													<a class="button button-primary" href="http://demo.wponlinesupport.com/slick-slider-demo/?utm_source=hp&event=demo" target="_blank"><?php _e('Demo for Designs', 'wp-slick-slider-and-image-carousel'); ?></a>
 												</td>
 											</tr>
