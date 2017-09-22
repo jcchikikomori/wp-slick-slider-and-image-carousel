@@ -117,6 +117,9 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 == Changelog ==
 
+= 1.3.1 (22/09/2017) =
+* [*]  Fix main JS wp_register_script issue
+
 = 1.3 (22/09/2017) =
 * [+] Added **sliderheight** parameter in shortcode <code>[slick-carousel-slider]</code>
 * [*] RTL made better to work with RTL websites
@@ -168,6 +171,9 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 
 == Upgrade Notice ==
+
+= 1.3.1 (22/09/2017) =
+* [*]  Fix main JS wp_register_script issue
 
 = 1.3 (22/09/2017) =
 * [+] Added **sliderheight** parameter in shortcode <code>[slick-carousel-slider]</code>
