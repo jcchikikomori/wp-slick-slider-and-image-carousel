@@ -137,7 +137,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
     opacity: 1;
     transform: scale(1);
 }
-.center.variablewidthv .slick-image-slide-wrap{ opacity: 1;    transform: scale(1) !important;}
+.center.variablewidthv .slick-image-slide-wrap{ opacity: 1!important;  transform: scale(1) !important;}
 .wpsisac-slick-carousal.design-6 .slick-arrow { top:40% !important;}
 .wpsisac-slick-carousal.design-6 .slick-next{right:0px !important;}
 .wpsisac-slick-carousal.design-6 .slick-prev{left:0px !important; ;}
