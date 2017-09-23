@@ -50,15 +50,15 @@ jQuery(document).ready(function($) {
 			responsive 		: [{
 				breakpoint 	: 1023,
 				settings 	: {
-					slidesToShow 	: (parseInt(slider_conf.slidestoshow) > 2) ? 2 : parseInt(slider_conf.slidestoshow),
+					slidesToShow 	: (parseInt(slider_conf.slidestoshow) > 3) ? 3 : parseInt(slider_conf.slidestoshow),
 					slidesToScroll 	: 1,
 				}
 			},{
 				breakpoint	: 767,	  			
 				settings	: {
-					slidesToShow 	: (parseInt(slider_conf.slidestoshow) > 2) ? 2 : parseInt(slider_conf.slidestoshow),
+					slidesToShow 	: (parseInt(slider_conf.slidestoshow) > 3) ? 3 : parseInt(slider_conf.slidestoshow),
 					slidesToScroll 	: 1,
-					centerMode 		: false,
+					centerMode 		: (slider_conf.centermode) == "true" ? true : false,
 				}
 			},
 			{
@@ -67,12 +67,12 @@ jQuery(document).ready(function($) {
 					slidesToShow 	: 1,
 					slidesToScroll 	: 1,
 					dots 			: false,
-					centerMode 		: false,
+					centerMode 		: true,
 					
 				}
 			},
 			{
-				breakpoint	: 319,
+				breakpoint	: 480,
 				settings	: {
 					slidesToShow 	: 1,
 					slidesToScroll 	: 1,
