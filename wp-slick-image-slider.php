@@ -1,20 +1,20 @@
 <?php
 /**
  * Plugin Name: WP Slick Slider and Image Carousel
- * Plugin URI: http://www.wponlinesupport.com/plugins
+ * Plugin URI: https://www.wponlinesupport.com/plugins
  * Text Domain: wp-slick-slider-and-image-carousel
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.3.1.1
- * Author URI: http://www.wponlinesupport.com/
+ * Version: 1.3.2
+ * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
  * @author WP Online Support
  */
 
 if( !defined('WPSISAC_VERSION') ){
-    define( 'WPSISAC_VERSION', '1.3.1.1' ); // Plugin version
+    define( 'WPSISAC_VERSION', '1.3.2' ); // Plugin version
 }
 if( !defined( 'WPSISAC_VERSION_DIR' ) ) {
     define( 'WPSISAC_VERSION_DIR', dirname( __FILE__ ) ); // Plugin dir

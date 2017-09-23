@@ -117,6 +117,10 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 == Changelog ==
 
+= 1.3.2 (23/09/2017) =
+* [*] Fixed design-6 issue with shortcode parameter variablewidth="true"
+* [*] If you are using any cache plugin, please clear your cacheing after plugin updates 
+
 = 1.3.1.1 (23/09/2017) =
 * [*] Fix responsive issue reported by users in v-1.3.1 
 * [*] If you are using any cache plugin, please clear your cacheing after plugin updates 
@@ -175,6 +179,10 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 
 == Upgrade Notice ==
+
+= 1.3.2 (23/09/2017) =
+* [*] Fixed design-6 issue with shortcode parameter variablewidth="true"
+* [*] If you are using any cache plugin, please clear your cacheing after plugin updates 
 
 = 1.3.1.1 (23/09/2017) =
 * [*] Fix responsive issue reported by users in v-1.3.1 
