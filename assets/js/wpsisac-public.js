@@ -68,6 +68,7 @@ jQuery(document).ready(function($) {
 					slidesToScroll 	: 1,
 					dots 			: false,
 					centerMode 		: true,
+					variableWidth 	: false,
 					
 				}
 			},
@@ -78,6 +79,7 @@ jQuery(document).ready(function($) {
 					slidesToScroll 	: 1,
 					dots 			: false,
 					centerMode 		: false,
+					variableWidth 	: false,
 					
 				}
 			}]
