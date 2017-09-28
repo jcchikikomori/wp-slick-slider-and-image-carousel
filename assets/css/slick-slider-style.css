@@ -183,7 +183,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
    
 @media only screen and (max-width: 40.0625em) {  
    .slick-image-slide img{height: 100% !important;width: 100% !important;object-fit: cover;object-position: top center;}
-   .slick-image-slide, .slide-wrap{height:350px !important;}
+   .slick-image-slide, .slide-wrap{height:350px;}
    .wpsisac-slick-slider.design-5 .slick-image-slide, .wpsisac-slick-slider.design-5  .slide-wrap{height:auto !important;}
    .wpsisac-slick-slider h2{font-size:22px; line-height:26px;}
    .slick-slider-short-content p{font-weight:normal !important}
