@@ -117,6 +117,10 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 == Changelog ==
 
+= 1.3.4 (04/10/2017) =
+* [*] Fixed all responsive issues and checked many mobile devices.
+* [*] If you are using any cache plugin, please clear your cacheing after plugin updates
+
 = 1.3.3 (04/10/2017) =
 * [*] Updated slick.min.js to the latest version
 * [*] Fixed all responsive issues and checked many mobile devices.
@@ -188,6 +192,10 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 
 
 == Upgrade Notice ==
+
+= 1.3.4 (04/10/2017) =
+* [*] Fixed all responsive issues and checked many mobile devices.
+* [*] If you are using any cache plugin, please clear your cacheing after plugin updates
 
 = 1.3.3 (04/10/2017) =
 * [*] Updated slick.min.js to the latest version
