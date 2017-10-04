@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 				slidesToScroll	: 1,
 				adaptiveHeight 	: false,
 				rtl             : (slider_conf.rtl) == "true" ? true : false,
-				mobileFirst    	: (Wpsisac.is_mobile == 1) ? true : false,				
+				mobileFirst    	: false,				
 			});
 		}		
 		
@@ -46,10 +46,10 @@ jQuery(document).ready(function($) {
 			centerMode 		: (slider_conf.centermode) == "true" ? true : false,
 			variableWidth 	: (slider_conf.variablewidth) == "true" ? true : false,			
 			rtl             : (slider_conf.rtl) == "true" ? true : false,
-			mobileFirst    	: (Wpsisac.is_mobile == 1) ? true : false,
+			mobileFirst    	: false,			
 			responsive 		: [{
 				breakpoint 	: 1023,
-				settings 	: {
+				settings 	: {					
 					slidesToShow 	: (parseInt(slider_conf.slidestoshow) > 3) ? 3 : parseInt(slider_conf.slidestoshow),
 					slidesToScroll 	: 1,
 				}

@@ -59,7 +59,7 @@ class Wpsisac_Script {
 		wp_register_script( 'wpsisac-public-script', WPSISAC_URL.'assets/js/wpsisac-public.js', array('jquery'), WPSISAC_VERSION, true );
 		wp_localize_script( 'wpsisac-public-script', 'Wpsisac', array(
 																	'is_mobile' => (wp_is_mobile()) ? 1 : 0,
-																	'is_rtl' 	=> (is_rtl()) 		? 1 : 0
+																	'is_rtl' 	=> (is_rtl()) 		? 1 : 0,
 																	));
 	}
 	

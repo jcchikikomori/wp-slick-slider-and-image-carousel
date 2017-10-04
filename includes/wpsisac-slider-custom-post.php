@@ -23,12 +23,12 @@ function wpsisac_slider_init() {
     'public'                => false,    
     'show_ui'               => true,
     'show_in_menu'          => true, 
-    'query_var'             => true,
+    'query_var'             => false,
     'rewrite'               => false,
     'capability_type'       => 'post',
-    'has_archive'           => true,
-    'hierarchical'          => false,
-    'menu_position'         => 8,
+    'has_archive'           => false,
+    'hierarchical'          => false, 
+	'exclude_from_search'   => true,	
     'menu_icon'             => 'dashicons-slides',
     'supports'              => array('title','editor','thumbnail')
   );

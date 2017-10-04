@@ -144,7 +144,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-carousal.design-6 .slick-prev{left:0px !important;}
 .wpsisac-slick-carousal.design-6 .slick-dots{left:15px !important; right:15px; text-align:center;  bottom:0px !important;}
 
-.slide-wrap .readmore a.slider-readmore{padding:5px 10px; background:rgba(0,0,0,0.8); color:#fff;border:1px solid #fff; text-transform:uppercase}
+.slide-wrap .readmore a.slider-readmore{padding:5px 10px; background:rgba(0,0,0,0.8); text-decoration:none !important; color:#fff;border:1px solid #fff; text-transform:uppercase}
 .wpcolumn,
 .wpcolumns {  padding-left: 0.9375em;  padding-right: 0.9375em;   float: left;  width:100%;  
   position: relative; }
