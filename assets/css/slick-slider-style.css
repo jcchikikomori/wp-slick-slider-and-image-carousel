@@ -126,7 +126,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-slider.design-5 .slick-prev{left:0px !important;}
 .wpsisac-slick-slider.design-5 .slick-dots{left:15px !important; right:15px; text-align:center;  bottom:8px !important;}
 
-.wpsisac-slick-carousal.design-6{padding-bottom:25px;}
+.wpsisac-slick-carousal.design-6{margin-bottom:25px;}
 .wpsisac-slick-carousal.design-6 .slick-image-slide{text-align:center; }
 .wpsisac-slick-carousal.design-6 .slick-image-slide img{display:inline-block !important; }
 .wpsisac-slick-carousal.wpsisac-center .slick-slide .slick-image-slide-wrap {
@@ -139,7 +139,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
     transform: scale(1);
 }
 .wpsisac-center.variablewidthv .slick-image-slide-wrap{ opacity: 1!important;  transform: scale(1) !important;}
-.wpsisac-slick-carousal.design-6 .slick-arrow { top:40% !important; cursor:pointer;}
+.wpsisac-slick-carousal.design-6 .slick-arrow { top:50% !important; cursor:pointer; -webkit-transform: translateY(-50%);transform: translateY(-50%);}
 .wpsisac-slick-carousal.design-6 .slick-next{right:0px !important;}
 .wpsisac-slick-carousal.design-6 .slick-prev{left:0px !important;}
 .wpsisac-slick-carousal.design-6 .slick-dots{left:15px !important; right:15px; text-align:center;  bottom:0px !important;}
@@ -189,7 +189,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
    .slick-slider-short-content p{font-weight:normal !important}
    .wpsisac-slick-slider.design-4 .slick-image-slide, .wpsisac-slick-slider.design-4 .slide-wrap{height:auto !important;}
   .wpsisac-slick-slider.design-4 .slick-image-slide .slide-wrap .slider-content-left{padding:20px}
- 
+  .wpsisac-slick-carousal .slick-image-slide-wrap, .wpsisac-slick-carousal .slick-image-slide{height:auto !important}
   }
 @media only screen and (max-width: 480px) {   
   .wpsisac-slick-carousal.wpsisac-center .slick-slide .slick-image-slide-wrap { opacity: 1; transform: scale(1); transition: all 300ms ease 0s;}
