@@ -87,7 +87,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 						}
 				endwhile; ?>
 		</div>	
-		<div class="wpsisac-slider-conf wpsisac-hide"><?php echo htmlspecialchars(json_encode($slider_conf)); ?></div>
+		<div class="wpsisac-slider-conf wpsisac-hide" data-conf="<?php echo htmlspecialchars(json_encode($slider_conf)); ?>"></div>
 	</div>
 	<?php
     endif; 
