@@ -84,6 +84,10 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 > Check [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) to know more.
 >
 
+= How to install : =
+[youtube https://www.youtube.com/watch?v=rkbohcgmzVg] 
+
+
 = Features include =
 
 * Display unlimited number of slider and carousel with the help of category.
@@ -104,7 +108,7 @@ Download all our [FREE 35+ WordPress Plugins](https://www.wponlinesupport.com/wp
 <code>[slick-slider] and [slick-carousel-slider]</code>
 
 = How to install : =
-[youtube https://www.youtube.com/watch?v=c9pID1dWON4] 
+[youtube https://www.youtube.com/watch?v=rkbohcgmzVg] 
 
 == Screenshots ==
 
