@@ -20,7 +20,7 @@ We have added 5 designs for slider and 1 design for carousel. You can find all d
 
 Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) | [PRO DEMO and Features](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) for additional information.
 
-Do you want to try our new FREE WordPress plugin[SlidersPack – All In One Image Sliders](https://wordpress.org/plugins/sliderspack-all-in-one-image-sliders/)?
+[SlidersPack – All In One Image Sliders](https://wordpress.org/plugins/sliderspack-all-in-one-image-sliders/) our new **FREE WordPress Plugin**. Try it Now.
 
 = You can use 2 shortcodes =
 
