@@ -22,6 +22,8 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 [PowerPack Lite](https://wordpress.org/plugins/powerpack-lite/) our new **FREE WordPress Plugin**. Try it Now.
 
+Download our all [FREE 44+ WordPress Plugins and 7+ Themes](wordpress-free-plugins/?utm_source=wp&event=fd)
+
 = You can use 2 shortcodes =
 
 <code>[slick-slider] and [slick-carousel-slider]</code>
