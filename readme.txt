@@ -13,16 +13,13 @@ A quick, easy way to add and display mulipale WP Slick Slider and carousel using
 
 Display multiple slick image slider and carousel using shortcode with category. Fully responsive, Swipe enabled, Desktop mouse dragging and  Infinite looping. Fully accessible with arrow key navigation  Autoplay, dots, arrows etc.
 
-It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page.
-You can also display image slider on your website header.
+It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page. You can also display image slider on your website header.
 
 We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of design that you like and use.
 
 Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) | [PRO DEMO and Features](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) for additional information.
 
 [PowerPack Lite](https://wordpress.org/plugins/powerpack-lite/) our new **FREE WordPress Plugin**. Try it Now.
-
-Download our all [FREE 44+ WordPress Plugins and 7+ Themes](wordpress-free-plugins/?utm_source=wp&event=fd)
 
 = You can use 2 shortcodes =
 
