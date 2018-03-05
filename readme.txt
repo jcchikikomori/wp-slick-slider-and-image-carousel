@@ -15,7 +15,7 @@ Display multiple slick image slider and carousel using shortcode with category. 
 
 It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page. You can also display image slider on your website header.
 
-We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of design that you like and use.
+We have added 5 designs for slider and 1 design for carousel. You can find all designs on our demo website. Just copy the shortcode of design that you like and use.
 
 Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) | [PRO DEMO and Features](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) for additional information.
 
