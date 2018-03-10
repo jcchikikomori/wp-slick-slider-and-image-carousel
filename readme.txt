@@ -2,7 +2,7 @@
 Contributors: wponlinesupport, anoopranawat 
 Tags: wponlinesupport, slick, image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive content slider, carousel, image carousel, carousel slider, content slider, coin slider, touch slider, text slider, responsive slider, responsive slideshow, Responsive Touch Slider, wp slider, wp image slider, wp header image slider, photo slider, responsive photo slider  
 Requires at least: 3.1
-Tested up to: 4.9
+Tested up to: 4.9.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -118,6 +118,9 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 == Changelog ==
 
+= 1.4 (10/3/2018) =
+* [*] Fixed  some css issues
+
 = 1.3.4 (04/10/2017) =
 * [*] Fixed all responsive issues and checked many mobile devices.
 * [*] If you are using any cache plugin, please clear your cacheing after plugin updates
@@ -193,6 +196,9 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 
 == Upgrade Notice ==
+
+= 1.4 (10/3/2018) =
+* [*] Fixed  some css issues
 
 = 1.3.4 (04/10/2017) =
 * [*] Fixed all responsive issues and checked many mobile devices.
