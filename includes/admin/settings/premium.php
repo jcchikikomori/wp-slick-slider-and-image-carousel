@@ -116,7 +116,7 @@ if ( !defined( 'ABSPATH' ) ) {
 				<td><i class="dashicons dashicons-no-alt"></i></td>
 				<td><i class="dashicons dashicons-yes"></i></td>
 			</tr>
-	    	<tr>
+	    	
 			<tr>
 				<th>Slider Effect  <span>Slider effect for slider shortcode</span></th>
 				<td>Slide</i></td>
