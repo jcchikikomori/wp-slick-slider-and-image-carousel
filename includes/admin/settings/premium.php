@@ -70,7 +70,7 @@ if ( !defined( 'ABSPATH' ) ) {
 	    		</th>
 	    		<th>
 	    			<h2>Premium</h2>
-	    			<p>$16 USD</p>
+	    			<p>$19 USD</p>
 	    			<p class="promo">Our most valuable package!</p>
 	    		</th>	    		
 	    	</tr>
