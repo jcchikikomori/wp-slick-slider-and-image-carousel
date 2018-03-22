@@ -103,7 +103,7 @@ if ( !defined( 'ABSPATH' ) ) {
 	    	<tr>
 	    		<th>Shortcode Generator <span>Play with all shortcode parameters with preview panel. No documentation required!!</span></th>
 	    		<td><i class="dashicons dashicons-no-alt"></i></td>
-	    		<td>Coming Soon</td>
+	    		<td><i class="dashicons dashicons-yes"></i></td>
 	    	</tr>			    	
 			
 	    	<tr>
