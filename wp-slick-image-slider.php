@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.4
+ * Version: 1.5
  * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
@@ -14,7 +14,7 @@
  */
 
 if( !defined('WPSISAC_VERSION') ){
-    define( 'WPSISAC_VERSION', '1.4' ); // Plugin version
+    define( 'WPSISAC_VERSION', '1.5' ); // Plugin version
 }
 if( !defined( 'WPSISAC_VERSION_DIR' ) ) {
     define( 'WPSISAC_VERSION_DIR', dirname( __FILE__ ) ); // Plugin dir
@@ -25,6 +25,37 @@ if( !defined( 'WPSISAC_URL' ) ) {
 if( !defined( 'WPSISAC_POST_TYPE' ) ) {
     define( 'WPSISAC_POST_TYPE', 'slick_slider' ); // Plugin post type
 }
+
+
+/* Plugin Wpos Analytics Data Starts */
+function wpos_analytics_anl25_load() {
+
+    require_once dirname( __FILE__ ) . '/wpos-analytics/wpos-analytics.php';
+
+    $wpos_analytics =  wpos_anylc_init_module( array(
+                            'id'            => 25,
+                            'file'          => plugin_basename( __FILE__ ),
+                            'name'          => 'WP Slick Slider and Image Carousel',
+                            'slug'          => 'wp-slick-slider-and-image-carousel',
+                            'type'          => 'plugin',
+                            'menu'          => 'edit.php?post_type=slick_slider',
+                            'text_domain'   => 'wp-slick-slider-and-image-carousel',
+                            'promotion'     => array( // Only Pass if you have Promotion file
+                                                    'bundle' => array(
+                                                                        'name'  => 'Plugin and Theme Bundle',
+                                                                        'desc'  => 'Yes, I want to download the 50+ Plugins and 12+ Themes free.',
+                                                                        'file'  => 'https://www.wponlinesupport.com/latest/wpos-free-50-plugins-plus-12-themes.zip'                                                               
+                                                            )
+                                                    )
+                        ));
+
+    return $wpos_analytics;
+}
+
+// Init Analytics
+wpos_analytics_anl25_load();
+
+/* Plugin Wpos Analytics Data Ends */
 
 register_activation_hook( __FILE__, 'free_wpsisac_install_premium_version' );
 function free_wpsisac_install_premium_version(){

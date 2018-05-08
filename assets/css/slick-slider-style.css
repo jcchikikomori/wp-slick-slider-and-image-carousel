@@ -15,7 +15,7 @@
 				Slick slider
 ************************************************************/
 .wpsisac-slick-slider .slick-arrow{text-indent:-99999px;}
-.wpsisac-slick-slider button.slick-arrow {background-color: transparent!important; width:22px; height:38px; position:absolute; z-index:9; border:0px !important;
+.wpsisac-slick-slider button.slick-arrow {background-color: transparent!important; width:29px; height:40px; position:absolute; z-index:9; border:0px !important;
 padding:0 !important; margin:0px !important; border-radius:0px !important; cursor:pointer;}
 .wpsisac-slick-slider button.slick-next, .wpsisac-slick-slider button.slick-next:hover, .wpsisac-slick-slider button.slick-next:focus{background:rgba(255,255,255,0.7) url(arrow-right.png) center center no-repeat !important; background-size:15px 26px !important; outline:none !important}
 .wpsisac-slick-slider button.slick-prev, .wpsisac-slick-slider button.slick-prev:hover, .wpsisac-slick-slider button.slick-prev:focus{background:rgba(255,255,255,0.7) url(arrow-left.png) center center no-repeat !important; background-size:15px 26px !important;  outline:none !important}
@@ -28,7 +28,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important; curso
 .wpsisac-slick-slider .slick-slide{padding:0px !important}
 
 .wpsisac-slick-carousal .slick-arrow{text-indent:-99999px;}
-.wpsisac-slick-carousal button.slick-arrow {background-color: transparent!important; width:30px; height:51px; position:absolute; z-index:9; border:0px !important;
+.wpsisac-slick-carousal button.slick-arrow {background-color: transparent!important; width:29px; height:40px; position:absolute; z-index:9; border:0px !important;
 padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-carousal button.slick-next, .wpsisac-slick-carousal button.slick-next:hover, .wpsisac-slick-carousal button.slick-next:focus{background:rgba(255,255,255,0.7) url(arrow-right.png) center center no-repeat !important; background-size:15px 26px !important; outline:none !important}
 .wpsisac-slick-carousal button.slick-prev, .wpsisac-slick-carousal button.slick-prev:hover, .wpsisac-slick-carousal button.slick-prev:focus{background:rgba(255,255,255,0.7) url(arrow-left.png) center center no-repeat !important; background-size:15px 26px !important;  outline:none !important}
