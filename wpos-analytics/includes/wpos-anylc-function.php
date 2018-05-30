@@ -26,6 +26,17 @@ function wpos_anylc_text( $text, $echo = false ) {
 }
 
 /**
+ * Check Multidimention Array
+ *
+ * @package Wpos Analytic
+ * @since 1.0
+ */
+function wpos_anylc_is_multi_arr( $arr ) {
+    rsort( $arr );
+    return isset( $arr[0] ) && is_array( $arr[0] );
+}
+
+/**
  * Get site unique id
  * 
  * @package Wpos Analytic
@@ -256,19 +267,45 @@ function wpos_anylc_optout_url( $module_data = '', $optin_status = null, $redire
  * @package Wpos Analytic
  * @since 1.0.0
  */
-function wpos_anylc_pdt_url( $module_data = '', $promotion = false ) {
+function wpos_anylc_pdt_url( $module_data = '', $type = false ) {
 
 	$redirect_url = false;
 
 	if( !empty( $module_data['menu'] ) ) {
-		$pos = strpos( $module_data['menu'], '?post_type' );
-		$redirect_url = ( $pos !== false ) ? admin_url( $module_data['menu'] ) : add_query_arg( array( 'page' => $module_data['menu'] ), admin_url('admin.php') );
+		$pos 			= strpos( $module_data['menu'], '?post_type' );
+		$redirect_url 	= ( $pos !== false ) ? admin_url( $module_data['menu'] ) : add_query_arg( array( 'page' => $module_data['menu'] ), admin_url('admin.php') );
 
-		if( !empty( $promotion ) ) {
-			$promotion 		= is_array( $promotion ) ? implode( ',', $promotion ) : $promotion;
-			$redirect_url 	= add_query_arg( array( 'message' => 'wpos_anylc_promotion', 'wpos_anylc_pdt' => $module_data['slug'], 'wpos_anylc_promo_pdt' => $promotion ), $redirect_url );
+		switch ( $type ) {
+			case 'promotion':
+
+				$promotion = !empty( $_GET['promotion'] ) ? $_GET['promotion'] : '';
+
+				if( !empty( $promotion ) ) {
+					$promotion 		= is_array( $promotion ) ? implode( ',', $promotion ) : $promotion;
+					$redirect_url 	= add_query_arg( array( 'message' => 'wpos_anylc_promotion', 'wpos_anylc_pdt' => $module_data['slug'], 'wpos_anylc_promo_pdt' => $promotion ), $redirect_url );
+				}
+				break;
+
+			case 'offer':
+
+				if( !empty( $module_data['offers'] ) ) {
+					$redirect_url = add_query_arg( array( 'page' => $module_data['slug'].'-offers' ), $redirect_url );
+				}
+				break;
+
+			case 'offer-promotion':
+
+				$promotion = !empty( $_GET['promotion'] ) ? $_GET['promotion'] : '';
+
+				if( !empty( $module_data['offers'] ) ) {
+					$redirect_url = add_query_arg( array( 'page' => $module_data['slug'].'-offers' ), $redirect_url );
+				}
+				if( !empty( $promotion ) ) {
+					$promotion 		= is_array( $promotion ) ? implode( ',', $promotion ) : $promotion;
+					$redirect_url 	= add_query_arg( array( 'message' => 'wpos_anylc_promotion', 'wpos_anylc_pdt' => $module_data['slug'], 'wpos_anylc_promo_pdt' => $promotion ), $redirect_url );
+				}
+				break;
 		}
 	}
-
 	return $redirect_url;
 }

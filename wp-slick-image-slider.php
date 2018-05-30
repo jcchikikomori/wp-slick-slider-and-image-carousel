@@ -26,37 +26,6 @@ if( !defined( 'WPSISAC_POST_TYPE' ) ) {
     define( 'WPSISAC_POST_TYPE', 'slick_slider' ); // Plugin post type
 }
 
-
-/* Plugin Wpos Analytics Data Starts */
-function wpos_analytics_anl25_load() {
-
-    require_once dirname( __FILE__ ) . '/wpos-analytics/wpos-analytics.php';
-
-    $wpos_analytics =  wpos_anylc_init_module( array(
-                            'id'            => 25,
-                            'file'          => plugin_basename( __FILE__ ),
-                            'name'          => 'WP Slick Slider and Image Carousel',
-                            'slug'          => 'wp-slick-slider-and-image-carousel',
-                            'type'          => 'plugin',
-                            'menu'          => 'edit.php?post_type=slick_slider',
-                            'text_domain'   => 'wp-slick-slider-and-image-carousel',
-                            'promotion'     => array( // Only Pass if you have Promotion file
-                                                    'bundle' => array(
-                                                                        'name'  => 'Plugin and Theme Bundle',
-                                                                        'desc'  => 'Yes, I want to download the 50+ Plugins and 12+ Themes free.',
-                                                                        'file'  => 'https://www.wponlinesupport.com/latest/wpos-free-50-plugins-plus-12-themes.zip'                                                               
-                                                            )
-                                                    )
-                        ));
-
-    return $wpos_analytics;
-}
-
-// Init Analytics
-wpos_analytics_anl25_load();
-
-/* Plugin Wpos Analytics Data Ends */
-
 register_activation_hook( __FILE__, 'free_wpsisac_install_premium_version' );
 function free_wpsisac_install_premium_version(){
 if( is_plugin_active('wp-slick-slider-and-image-carousel-pro/wp-slick-image-slider.php') ){
@@ -105,3 +74,41 @@ require_once( WPSISAC_VERSION_DIR . '/includes/admin/class-wpsisac-admin.php' );
 if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
     require_once( WPSISAC_VERSION_DIR . '/includes/admin/wpsisac-how-it-work.php' );	
 }
+
+/* Plugin Wpos Analytics Data Starts */
+function wpos_analytics_anl25_load() {
+
+    require_once dirname( __FILE__ ) . '/wpos-analytics/wpos-analytics.php';
+
+    $wpos_analytics =  wpos_anylc_init_module( array(
+                            'id'            => 25,
+                            'file'          => plugin_basename( __FILE__ ),
+                            'name'          => 'WP Slick Slider and Image Carousel',
+                            'slug'          => 'wp-slick-slider-and-image-carousel',
+                            'type'          => 'plugin',
+                            'menu'          => 'edit.php?post_type=slick_slider',
+                            'text_domain'   => 'wp-slick-slider-and-image-carousel',
+                            'promotion'     => array( 
+                                                    'bundle' => array(
+                                                                        'name'  => 'Plugin and Theme Bundle',
+                                                                        'desc'  => 'Yes, I want to download the 50+ Plugins and 12+ Themes free.',
+                                                                        'file'  => 'https://www.wponlinesupport.com/latest/wpos-free-50-plugins-plus-12-themes.zip'                                                               
+                                                            )
+                                                    ),
+                            'offers'         => array( 
+                                                    'trial_premium' => array(
+                                                                'name'      => '',
+                                                                'desc'      => '',
+                                                                'button'    => 'TRY FREE FOR 30 DAYS',
+                                                                'image'     => 'http://analytics.wponlinesupport.com/?anylc_img=25',
+                                                                'link'      => 'https://www.wponlinesupport.com/plugins-plus-themes-powerpack-combo-offer/?ref=blogeditor'
+                                                        ),
+                                                    ),
+                        ));
+
+    return $wpos_analytics;
+}
+
+// Init Analytics
+wpos_analytics_anl25_load();
+/* Plugin Wpos Analytics Data Ends */

@@ -11,7 +11,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 ?>
 <style type="text/css">
-	.notice, div.fs-notice.updated, div.fs-notice.success, div.fs-notice.promotion{display:none !important;}
+	.notice, .error, div.fs-notice.updated, div.fs-notice.success, div.fs-notice.promotion{display:none !important;}
 </style>
 
 <div class="wrap wpos-anylc-optin">

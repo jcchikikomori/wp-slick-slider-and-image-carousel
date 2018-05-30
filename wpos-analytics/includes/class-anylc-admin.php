@@ -31,7 +31,7 @@ class Wpos_Anylc_Admin {
 		add_action( 'admin_menu', array($this, 'wpos_anylc_remove_admin_menu'), 999 );
 
 		// Action to add admin menu
-		add_action( 'admin_menu', array($this, 'wpos_anylc_register_admin_menu') );
+		add_action( 'admin_menu', array($this, 'wpos_anylc_register_admin_menu'), 15 );
 
 		// Action to redirect plugin / theme on activation
 		add_action( 'admin_init', array($this, 'wpos_anylc_redirect_module') );
@@ -74,18 +74,24 @@ class Wpos_Anylc_Admin {
 	 * @since 1.0
 	 */
 	function wpos_anylc_register_admin_menu() {
-		
+
 		global $menu, $submenu, $wpos_analytics_module;
 
 	    if( !empty( $wpos_analytics_module ) ) {
 
 	    	// WP Menu data
 	    	$wpos_menu_data = wp_list_pluck( $menu, 2 );
+	    	$anylc_page 	= isset( $_GET['page'] ) ? $_GET['page'] : null;
 
 	    	foreach ($wpos_analytics_module as $module_key => $module) {
 
 	    		$opt_in_data 	= wpos_anylc_get_option( $module['anylc_optin'] );
 	    		$optin_status	= isset( $opt_in_data['status'] ) ? $opt_in_data['status'] : null;
+
+	    		// Offers Page
+	    		if( !empty( $module['offers'] ) && $anylc_page == $module['slug'].'-offers' ) {
+	    			add_submenu_page( $module['menu'], 'WPOS Offers', '<span style="color:#2ECC71">Premium Offers</span>', 'manage_options', $module['slug'].'-offers', array($this, 'wpos_anylc_offers_html') );
+	    		}
 
 				// If data is set
 				if( $optin_status == 1 ) {
@@ -98,7 +104,7 @@ class Wpos_Anylc_Admin {
 	    		if( $optin_status === 0 || $optin_status === 2 ) {
 
 	    			// Register admin menu
-	    			if( !empty( $_GET['anylc_optin_menu'] ) ) {
+	    			if( $anylc_page == $module['slug'] ) {
 						add_submenu_page( $module['menu'], $module['name'].' '.'Opt In', $module['name'].' '.'Opt In', 'manage_options', $module['slug'], array($this, 'wpos_anylc_page_html') );
 	    			}
 
@@ -128,8 +134,9 @@ class Wpos_Anylc_Admin {
 
 			    	// Register admin menu
 					add_menu_page( $menu_args['name'], $menu_args['name'], 'manage_options', $module['slug'], array($this, 'wpos_anylc_page_html'), $menu_args['icon'], $menu_args['position'] );
-	    		}	    		
-	    	}
+	    		}
+
+	    	} // End of for each
 	    }
 	}
 
@@ -164,6 +171,31 @@ class Wpos_Anylc_Admin {
 		$skip_url	= wp_nonce_url( $skip_url, 'wpos_anylc_act' );
 
 	    require_once WPOS_ANYLC_DIR .'/templates/analytic.php';
+	}
+
+	/**
+	 * Display Offers HTML
+	 * 
+	 * @package Wpos Analytic
+	 * @since 1.0
+	 */
+	function wpos_anylc_offers_html() {
+
+		global $wpos_analytics_product;
+
+		$anylc_product_name = isset( $_GET['page'] ) ? str_replace('-offers', '', $_GET['page']) : null;
+
+		// if no data is set then return
+		if( ! isset( $wpos_analytics_product[ $anylc_product_name ] ) ) {
+			return;
+		}
+
+		// Taking soem data
+		$analy_product 	= $wpos_analytics_product[ $anylc_product_name ];
+		$opt_in_data 	= wpos_anylc_get_option( $analy_product['anylc_optin'] );
+		$opt_in 		= isset( $opt_in_data['status'] ) ? $opt_in_data['status'] : null;
+
+		include_once( WPOS_ANYLC_DIR .'/templates/offers.php' );
 	}
 
 	/**
@@ -329,7 +361,6 @@ class Wpos_Anylc_Admin {
 
 			global $wpos_analytics_product;
 
-			$promotion 		= !empty( $_GET['promotion'] ) 						? $_GET['promotion'] 					: '';			
 			$anylc_pdt 		= !empty( $_GET['wpos_anylc_pdt'] ) 				? $_GET['wpos_anylc_pdt'] 				: '';
 			$anylc_pdt 		= ( ! $anylc_pdt && !empty( $_GET['page'] ) ) 		? $_GET['page'] 						: $anylc_pdt;
 			$anylc_pdt_data = isset( $wpos_analytics_product[ $anylc_pdt ] )	? $wpos_analytics_product[ $anylc_pdt ] : false;
@@ -348,7 +379,7 @@ class Wpos_Anylc_Admin {
 					$opt_in_data = wpos_anylc_update_option( $anylc_pdt_data['anylc_optin'], array('status' => 1) );
 
 					// Redirect to original menu
-					$redirect_url = wpos_anylc_pdt_url( $anylc_pdt_data, $promotion );
+					$redirect_url = wpos_anylc_pdt_url( $anylc_pdt_data, 'offer-promotion' );
 					if( $redirect_url ) {
 						wp_redirect( $redirect_url );
 						exit;
@@ -364,10 +395,24 @@ class Wpos_Anylc_Admin {
 						wp_die( __('Sorry, Something happened wrong.', 'wpos_analytic'), 'wpos_anylc_err', array('back_link' => true) );
 					}
 
-					$opt_in_data = wpos_anylc_update_option( $anylc_pdt_data['anylc_optin'], array('status' => 2) );
+					$optin_form_data = wpos_anylc_optin_data();
+					$optin_form_data['wpos_anylc_action'] = 'skip';
+
+					$anylc_args = array(
+								'timeout' 	=> 60,
+								'sslverify'	=> false,
+								'body' 		=> $optin_form_data,
+							);
+
+					// Post back to get a response.
+					$response = wp_safe_remote_post( 'http://analytics.wponlinesupport.com', $anylc_args );
+
+					if( wp_remote_retrieve_response_code( $response ) == 200 ) {
+						$opt_in_data = wpos_anylc_update_option( $anylc_pdt_data['anylc_optin'], array('status' => 2) );
+					}
 
 					// Redirect to original menu
-					$redirect_url = wpos_anylc_pdt_url( $anylc_pdt_data );
+					$redirect_url = wpos_anylc_pdt_url( $anylc_pdt_data, 'offer' );
 					if( $redirect_url ) {
 						wp_redirect( $redirect_url );
 						exit;

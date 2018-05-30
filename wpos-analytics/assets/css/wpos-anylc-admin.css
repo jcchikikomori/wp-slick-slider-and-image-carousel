@@ -22,6 +22,8 @@
 .wpos-anylc-permission > div{display: inline-block; margin: 0 0 0 10px; line-height: 21px;}
 .wpos-anylc-permission .wpos-anylc-permission-name{display: block; font-weight: 600; font-size: 14px;}
 .wpos-anylc-permission .wpos-anylc-permission-info{display: block;}
+.button.wpos-anylc-btn{height: auto !important; padding: 2px 12px !important; font-size:15px; font-weight:600; height:auto !important; padding: 2px 12px !important; font-size:15px; font-weight:600; border-radius:0;}
+.wpos-anylc-center{text-align:center;}
 
 /* Popup CSS */
 .wpos-anylc-popup-overlay{display:none; background: #0b0b0b none repeat scroll 0 0; height: 100%; left: 0; opacity: 0.8; overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 9995;}
@@ -35,6 +37,14 @@
 .wpos-anylc-popup-footer{padding:20px; text-align:right;}
 .wpos-anylc-no-overflow{overflow:hidden;}
 .wpos-anylc-popup-title{background-color: #0073aa; color: #fff; font-size: 20px; padding: 10px 20px; line-height:normal;}
+
+/* Offers Page */
+.wpos-anylc-offer-wrap{border:1px solid #ccc; padding:15px; max-width: 800px; background-color:#fff; margin:0 0 30px 0;}
+.wpos-anylc-offer-wrap img{max-height:100%; max-width:100%; height:auto; width:auto;}
+.wpos-anylc-offer-wrap .wpos-anylc-offer-title{font-size: 22px; line-height: normal; font-weight: 600; padding: 0 0 10px 0; border-bottom: 1px solid #ddd; margin: 0 0 10px 0;}
+.wpos-anylc-offer-wrap .wpos-anylc-offer-body{margin-bottom: 10px;}
+.wpos-anylc-offer-wrap .wpos-anylc-offer-desc p{font-size: 16px;}
+.wpos-anylc-offer-wrap a:focus, .wpos-anylc-offer-wrap a:active, .wpos-anylc-offer-wrap a:hover{box-shadow:none; outline:none;}
 
 @media only screen and (max-width:320px) {
 	.wpos-anylc-optin-icon{max-height: 56px;}
