@@ -86,7 +86,7 @@ if ( !defined( 'ABSPATH' ) ) {
 				</div>
 			</div>
 			<div class="wpos-anylc-terms">
-				<a href="#" target="_blank">Privacy Policy</a> - <a href="#" target="_blank">Terms of Service</a>
+				<a href="https://www.wponlinesupport.com/privacy-policy/" target="_blank">Privacy Policy</a> - <a href="https://www.wponlinesupport.com/term-and-condition/" target="_blank">Terms of Service</a>
 			</div>
 		</div>
 	</form>

@@ -23,6 +23,8 @@
 .wpos-anylc-permission .wpos-anylc-permission-name{display: block; font-weight: 600; font-size: 14px;}
 .wpos-anylc-permission .wpos-anylc-permission-info{display: block;}
 .button.wpos-anylc-btn{height: auto !important; padding: 2px 12px !important; font-size:15px; font-weight:600; height:auto !important; padding: 2px 12px !important; font-size:15px; font-weight:600; border-radius:0;}
+.wpos-anylc-notice{position: relative;}
+.wpos-anylc-notice .notice-dismiss{text-decoration:none;}
 .wpos-anylc-center{text-align:center;}
 
 /* Popup CSS */

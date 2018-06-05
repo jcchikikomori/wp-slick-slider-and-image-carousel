@@ -34,7 +34,7 @@ class Wpos_Anylc_Admin {
 		add_action( 'admin_menu', array($this, 'wpos_anylc_register_admin_menu'), 15 );
 
 		// Action to redirect plugin / theme on activation
-		add_action( 'admin_init', array($this, 'wpos_anylc_redirect_module') );
+		add_action( 'admin_init', array($this, 'wpos_anylc_admin_init_process') );
 
 		// Action to show optin notice
 		add_action( 'admin_notices', array($this, 'wpos_anylc_optin_notice') );
@@ -240,7 +240,12 @@ class Wpos_Anylc_Admin {
 	 * @package Wpos Analytic
 	 * @since 1.0
 	 */
-	function wpos_anylc_redirect_module() {
+	function wpos_anylc_admin_init_process() {
+
+		// If license notice is dismissed
+	    if( isset($_GET['message']) && $_GET['message'] == 'wpos-anylc-dismiss-notice' && !empty( $_GET['anylc_id'] ) ) {
+	    	set_transient( 'wpos_anylc_optin_notice_'.$_GET['anylc_id'], true, 172800 );
+	    }
 
 		$redirect = get_option('wpos_anylc_redirect');
 
@@ -264,24 +269,35 @@ class Wpos_Anylc_Admin {
 	 */
 	function wpos_anylc_optin_notice() {
 
-		global $wpos_analytics_module, $wpos_analytics_product;
+		global $current_screen, $wpos_analytics_module, $wpos_analytics_product;
+
+		// Taking some variables
+		$screen_id = isset( $current_screen->id ) ? $current_screen->id : '';
 
 		// Plugin action links
-		if( !empty( $wpos_analytics_module ) ) {
+		if( $screen_id == 'dashboard' && current_user_can('manage_options') && !empty( $wpos_analytics_module ) ) {
 			foreach ($wpos_analytics_module as $module_key => $module) {
 
-				$opt_in_data 	= wpos_anylc_get_option( $module['anylc_optin'] );
-				$opt_in 		= isset( $opt_in_data['status'] ) ? $opt_in_data['status'] : -1;
+				$anylc_pdt_id		= $module['id'];
+				$notice_transient 	= get_transient( 'wpos_anylc_optin_notice_'.$anylc_pdt_id );
 
-				// If user has opt in
-				if( $opt_in == -1 ) {
+				if( $notice_transient == false ) {
 
-					$anylc_pdt_name 	= $module['name'];
-					$anylc_optin_url 	= wpos_anylc_optin_url( $module, $opt_in );
+					$opt_in_data 	= wpos_anylc_get_option( $module['anylc_optin'] );
+					$opt_in 		= isset( $opt_in_data['status'] ) ? $opt_in_data['status'] : -1;
+					$notice_link	= add_query_arg( array('message' => 'wpos-anylc-dismiss-notice', 'anylc_id' => $anylc_pdt_id), admin_url('index.php') );
 
-					echo '<div class="updated notice wpos-anylc-optin-notice is-dismissible">
-						<p><strong>'.$anylc_pdt_name.'</strong> - We made a few tweaks to the plugin, <a href="'.esc_url( $anylc_optin_url ).'">Opt in to make it Better!</a></p>
-					</div>';
+					// If user has opt in
+					if( $opt_in == -1 ) {
+
+						$anylc_pdt_name 	= $module['name'];
+						$anylc_optin_url 	= wpos_anylc_optin_url( $module, $opt_in );
+
+						echo '<div class="updated notice wpos-anylc-notice wpos-anylc-optin-notice">
+							<p><strong>'.$anylc_pdt_name.'</strong> - We made a few tweaks to the plugin, <a href="'.esc_url( $anylc_optin_url ).'">Opt in to make it Better!</a></p>
+							<a href="'.esc_url( $notice_link ).'" class="notice-dismiss"></a>
+						</div>';
+					}
 				}
 			}
 		} // End of if

@@ -119,8 +119,12 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 6. Design-6
 
 == Changelog ==
+
+= 1.5.1 (05, June 2018) =
+* [*] Follow some WordPress Detailed Plugin Guidelines.
+
 = 1.5 (10/3/2018) =
-* [*] Fixed  some css issues related to slider arrow
+* [*] Fixed  some css issues related to slider arrow.
 
 = 1.4 (10/3/2018) =
 * [*] Fixed  some css issues
@@ -155,13 +159,11 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 * [*] Center mode and variablewidth improved better as per usres feedback 
 * [*]  **sliderheight** parameter improved
 
-
 = 1.2.8 (22/05/2017) =
 * [+] RTL Supported
 
 = 1.2.7 (25/04/2017) =
 * [+] Added overlay for design-2
-
 
 = 1.2.6 (07/11/2016) =
 * [+] Added "How it work tab"

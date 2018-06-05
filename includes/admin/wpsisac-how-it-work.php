@@ -124,7 +124,7 @@ function wpsisacm_help_tabs() {
 													'transient_time'	=> 172800
 												),
 						'offers-feed' 	=> array(
-													'name'				=> __('WPOS Offers', 'wp-slick-slider-and-image-carousel'),
+													'name'				=> __('Hire Us', 'wp-slick-slider-and-image-carousel'),
 													'url'				=> 'http://wponlinesupport.com/plugin-data-api/wpos-offers.php',
 													'transient_key'		=> 'wpos_offers_feed',
 													'transient_time'	=> 86400,
@@ -140,7 +140,7 @@ function wpsisacm_help_tabs() {
  * @since 1.0.0
  */
 function wpsisacm_howitwork_page() { ?>
-	
+
 	<style type="text/css">
 		.wpos-pro-box .hndle{background-color:#0073AA; color:#fff;}
 		.wpos-pro-box .postbox{background:#dbf0fa none repeat scroll 0 0; border:1px solid #0073aa; color:#191e23;}
@@ -152,8 +152,6 @@ function wpsisacm_howitwork_page() { ?>
 	<div class="post-box-container">
 		<div id="poststuff">
 			<div id="post-body" class="metabox-holder columns-2">
-			
-				
 				<div id="post-body-content">
 					<div class="metabox-holder">
 						<div class="meta-box-sortables ui-sortable">
@@ -211,7 +209,7 @@ function wpsisacm_howitwork_page() { ?>
 												<td>
 													<p><?php _e('Check plugin document for shortcode parameters and demo for designs.', 'wp-slick-slider-and-image-carousel'); ?></p> <br/>
 													<a class="button button-primary" href="http://docs.wponlinesupport.com/wp-slick-slider-and-image-carousel/" target="_blank"><?php _e('Documentation', 'wp-slick-slider-and-image-carousel'); ?></a>									
-													<a class="button button-primary" href="http://demo.wponlinesupport.com/slick-slider-demo/?utm_source=hp&event=demo" target="_blank"><?php _e('Demo for Designs', 'wp-slick-slider-and-image-carousel'); ?></a>
+													<a class="button button-primary" href="http://demo.wponlinesupport.com/slick-slider-demo/" target="_blank"><?php _e('Demo for Designs', 'wp-slick-slider-and-image-carousel'); ?></a>
 												</td>
 											</tr>
 										</tbody>
@@ -222,12 +220,10 @@ function wpsisacm_howitwork_page() { ?>
 					</div>
 				</div>
 				
-				
 				<div id="postbox-container-1" class="postbox-container">
 					<div class="metabox-holder wpos-pro-box">
 						<div class="meta-box-sortables ui-sortable">
-							<div class="postbox" style="">
-									
+							<div class="postbox">
 								<h3 class="hndle">
 									<span><?php _e( 'Upgrate to Pro', 'wp-slick-slider-and-image-carousel' ); ?></span>
 								</h3>
@@ -245,13 +241,12 @@ function wpsisacm_howitwork_page() { ?>
 										<li>Fully responsive</li>
 										<li>100% Multi language</li>
 									</ul>
-									<a class="button button-primary wpos-button-full" href="https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/?utm_source=hp&event=go_premium" target="_blank"><?php _e('Go Premium ', 'wp-slick-slider-and-image-carousel'); ?></a>	
-									<p><a class="button button-primary wpos-button-full" href="http://demo.wponlinesupport.com/prodemo/pro-wp-slick-slider-and-carousel-demo/?utm_source=hp&event=pro_demo" target="_blank"><?php _e('View PRO Demo ', 'wp-slick-slider-and-image-carousel'); ?></a>			</p>								
+									<a class="button button-primary wpos-button-full" href="https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/" target="_blank"><?php _e('Go Premium ', 'wp-slick-slider-and-image-carousel'); ?></a>
+									<p><a class="button button-primary wpos-button-full" href="http://demo.wponlinesupport.com/prodemo/pro-wp-slick-slider-and-carousel-demo/" target="_blank"><?php _e('View PRO Demo ', 'wp-slick-slider-and-image-carousel'); ?></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					
 					<div class="metabox-holder">
 						<div class="meta-box-sortables ui-sortable">
@@ -260,7 +255,7 @@ function wpsisacm_howitwork_page() { ?>
 										<span><?php _e( 'Help to improve this plugin!', 'wp-slick-slider-and-image-carousel' ); ?></span>
 									</h3>									
 									<div class="inside">										
-										<p>Enjoyed this plugin? You can help by rate this plugin <a href="https://wordpress.org/support/plugin/wp-slick-slider-and-image-carousel/reviews/?filter=5" target="_blank">5 stars!</a></p>
+										<p>Enjoyed this plugin? You can help by rate this plugin <a href="https://wordpress.org/support/plugin/wp-slick-slider-and-image-carousel/reviews/" target="_blank">5 stars!</a></p>
 									</div>
 							</div>
 						</div>

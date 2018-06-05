@@ -11,7 +11,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 ?>
 <div class="wrap">
-	
+
 	<h2><?php _e( 'Slick Slider and Image Carousel - Features', 'wp-slick-slider-and-image-carousel' ); ?></h2><br />
 
 	<div class="wprps-notice">

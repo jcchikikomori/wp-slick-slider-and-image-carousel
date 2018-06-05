@@ -6,15 +6,15 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel  
  * Author: WP Online Support
- * Version: 1.5
+ * Version: 1.5.1
  * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
  * @author WP Online Support
  */
 
-if( !defined('WPSISAC_VERSION') ){
-    define( 'WPSISAC_VERSION', '1.5' ); // Plugin version
+if( !defined('WPSISAC_VERSION') ) {
+    define( 'WPSISAC_VERSION', '1.5.1' ); // Plugin version
 }
 if( !defined( 'WPSISAC_VERSION_DIR' ) ) {
     define( 'WPSISAC_VERSION_DIR', dirname( __FILE__ ) ); // Plugin dir
@@ -37,17 +37,22 @@ function free_wpsisac_deactivate_premium_version(){
 }
 add_action( 'admin_notices', 'free_wpsisac_rpfs_admin_notice');
 function free_wpsisac_rpfs_admin_notice() {
+    global $pagenow;
+
     $dir = ABSPATH . 'wp-content/plugins/wp-slick-slider-and-image-carousel-pro/wp-slick-image-slider.php';
-    if( is_plugin_active( 'wp-slick-slider-and-image-carousel/wp-slick-image-slider.php' ) && file_exists($dir)) {
-        global $pagenow;
-        if( $pagenow == 'plugins.php' ){
-            deactivate_plugins ( 'wp-slick-slider-and-image-carousel-pro/wp-slick-image-slider.php',true);
-            if ( current_user_can( 'install_plugins' ) ) {
-                echo '<div id="message" class="updated notice is-dismissible"><p><strong>Thank you for activating  WP Slick Slider and Image Carousel</strong>.<br /> It looks like you had PRO version <strong>(<em> WP Slick Slider and Image Carousel  Pro</em>)</strong> of this plugin activated. To avoid conflicts the extra version has been deactivated and we recommend you delete it. </p></div>';
-            }
-        }
+    $notice_link        = add_query_arg( array('message' => 'wpsisac-plugin-notice'), admin_url('plugins.php') );
+    $notice_transient   = get_transient( 'wpsisac_install_notice' );
+
+    if( $notice_transient == false && $pagenow == 'plugins.php' && file_exists( $dir ) && current_user_can( 'install_plugins' ) ) {        
+        echo '<div class="updated notice" style="position:relative;">
+            <p>
+                <strong>'.sprintf( __('Thank you for activating %s', 'wp-slick-slider-and-image-carousel'), 'WP Slick Slider and Image Carousel').'</strong>.<br/>
+                '.sprintf( __('It looks like you had PRO version %s of this plugin activated. To avoid conflicts the extra version has been deactivated and we recommend you delete it.', 'wp-slick-slider-and-image-carousel'), '<strong>(<em>WP Slick Slider and Image Carousel  Pro</em>)</strong>' ).'
+            </p>
+            <a href="'.esc_url( $notice_link ).'" class="notice-dismiss" style="text-decoration:none;"></a>
+        </div>';
     }
-}     
+}
 
 add_action('plugins_loaded', 'wpsisac_load_textdomain');
 function wpsisac_load_textdomain() {
@@ -88,17 +93,8 @@ function wpos_analytics_anl25_load() {
                             'type'          => 'plugin',
                             'menu'          => 'edit.php?post_type=slick_slider',
                             'text_domain'   => 'wp-slick-slider-and-image-carousel',
-                            'promotion'     => array( 
-                                                    'bundle' => array(
-                                                                        'name'  => 'Plugin and Theme Bundle',
-                                                                        'desc'  => 'Yes, I want to download the 50+ Plugins and 12+ Themes free.',
-                                                                        'file'  => 'https://www.wponlinesupport.com/latest/wpos-free-50-plugins-plus-12-themes.zip'                                                               
-                                                            )
-                                                    ),
-                            'offers'         => array( 
+                            'offers'         => array(
                                                     'trial_premium' => array(
-                                                                'name'      => '',
-                                                                'desc'      => '',
                                                                 'button'    => 'TRY FREE FOR 30 DAYS',
                                                                 'image'     => 'http://analytics.wponlinesupport.com/?anylc_img=25',
                                                                 'link'      => 'https://www.wponlinesupport.com/plugins-plus-themes-powerpack-combo-offer/?ref=blogeditor'
