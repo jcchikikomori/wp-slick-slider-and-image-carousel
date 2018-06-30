@@ -95,9 +95,8 @@ function wpos_analytics_anl25_load() {
                             'text_domain'   => 'wp-slick-slider-and-image-carousel',
                             'offers'         => array(
                                                     'trial_premium' => array(
-                                                                'button'    => 'TRY FREE FOR 30 DAYS',
-                                                                'image'     => 'http://analytics.wponlinesupport.com/?anylc_img=25',
-                                                                'link'      => 'https://www.wponlinesupport.com/plugins-plus-themes-powerpack-combo-offer/?ref=blogeditor'
+                                                            'image'     => 'http://analytics.wponlinesupport.com/?anylc_img=25',
+                                                            'link'      => 'https://www.wponlinesupport.com/plugins-plus-themes-powerpack-combo-offer/?ref=blogeditor'
                                                         ),
                                                     ),
                         ));
