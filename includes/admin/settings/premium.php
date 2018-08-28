@@ -12,7 +12,11 @@ if ( !defined( 'ABSPATH' ) ) {
 ?>
 <div class="wrap">
 
-	<h2><?php _e( 'Slick Slider and Image Carousel - Features', 'wp-slick-slider-and-image-carousel' ); ?></h2><br />	
+	<h2><?php _e( 'Slick Slider and Image Carousel - Features', 'wp-slick-slider-and-image-carousel' ); ?></h2><br />
+
+	<div class="wprps-notice">
+		<a href="https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=2665&edd_options[price_id]=3&ref=wposthemeplugin" target="_blank">Upgrade</a> a plugin within a minute and unloack many features now!!!
+	</div>
 
 	<style>
 		.wprps-notice{padding: 10px; color: #3c763d; background-color: #dff0d8; border:1px solid #d6e9c6; margin: 0 0 20px 0;}
@@ -76,8 +80,7 @@ if ( !defined( 'ABSPATH' ) ) {
 	    	<tr>
 	    		<th></th>
 	    		<td></td>
-	    		<!--<td><a href="https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=2665&edd_options[price_id]=3&ref=wposthemeplugin" target="_blank">Upgrade Now</a></td>-->
-				<td><a href="https://www.wponlinesupport.com/pricing/&ref=wposthemeplugin" target="_blank">View Pricing Options</a></td>
+	    		<td><a href="https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=2665&edd_options[price_id]=3&ref=wposthemeplugin" target="_blank">Upgrade Now</a></td>
 	    	</tr>
 	    </tfoot>
 
