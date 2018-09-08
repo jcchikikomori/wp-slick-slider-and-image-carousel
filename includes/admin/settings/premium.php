@@ -61,8 +61,8 @@ if ( !defined( 'ABSPATH' ) ) {
 								<span class="price"><sup>$</sup>299</span>	
 										<span class="length">one-time payment</span>
 								</li>
-								<li class="feature">41 Pro Plugins</li>
-								<li class="feature">4 Pro Plugins Addons</li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins/" target="_blank">41 Pro Plugins</a></li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins-addon/" target="_blank">4 Pro Plugins Addons</a></li>
 								<li class="feature"><span class="plus">Plus</span> 10 Themes</li>
 	                            <li class="feature"><a href="http://powerpack.wponlinesupport.com/" target="_blank">PowerPack</a></li>
 								<li class="feature"><strong>Lifetime product updates</strong></li>
@@ -83,8 +83,8 @@ if ( !defined( 'ABSPATH' ) ) {
 								<span class="price"><sup>$</sup>99</span>	
 										<span class="length">per year</span>
 								</li>
-								<li class="feature">41 Pro Plugins</li>
-								<li class="feature">4 Pro Plugins Addons</li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins/" target="_blank">41 Pro Plugins</a></li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins-addon/" target="_blank">4 Pro Plugins Addons</a></li>
 								<li class="feature"><span class="plus">Plus</span> 10 Themes</li>
 	                            <li class="feature"><a href="http://powerpack.wponlinesupport.com/" target="_blank">PowerPack</a></li>
 								<li class="feature">1 Year product updates</li>
@@ -104,8 +104,8 @@ if ( !defined( 'ABSPATH' ) ) {
 								<span class="price"><sup>$</sup>79</span>	
 										<span class="length">per year</span>
 								</li>
-								<li class="feature">41 Pro Plugins</li>
-								<li class="feature">4 Pro Plugins Addons</li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins/" target="_blank">41 Pro Plugins</a></li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins-addon/" target="_blank">4 Pro Plugins Addons</a></li>
 								<li class="feature"><span class="plus">Plus</span> 10 Themes</li>
 	                            <li class="feature"><a href="http://powerpack.wponlinesupport.com/" target="_blank">PowerPack</a></li>
 								<li class="feature">1 Year product updates</li>
@@ -126,8 +126,8 @@ if ( !defined( 'ABSPATH' ) ) {
 								<span class="price"><sup>$</sup>49</span>	
 										<span class="length">per year</span>
 								</li>
-								<li class="feature">41 Pro Plugins</li>
-								<li class="feature">4 Pro Plugins Addons</li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins/" target="_blank">41 Pro Plugins</a></li>
+								<li class="feature"><a href="https://www.wponlinesupport.com/plugins-addon/" target="_blank">4 Pro Plugins Addons</a></li>
 								<li class="feature"><span class="plus">Plus</span> 10 Themes</li>
 	                            <li class="feature"><a href="http://powerpack.wponlinesupport.com/" target="_blank">PowerPack</a></li>
 								<li class="feature">1 Year product updates</li>
