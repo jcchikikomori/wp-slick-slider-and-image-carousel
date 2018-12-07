@@ -104,6 +104,11 @@ if ( !defined( 'ABSPATH' ) ) {
 			<td><i class="dashicons dashicons-yes"> </i></td>
 			</tr>
 			<tr>
+				<th>WP Templating Features <span class="subtext">You can modify plugin html/designs in your current theme.</span></th>
+				<td><i class="dashicons dashicons-no-alt"> </i></td>
+				<td><i class="dashicons dashicons-yes"> </i></td>
+			</tr>
+			<tr>
 			<th>Drag &amp; Drop Slide Order Change <span class="subtext">Arrange your desired slides with your desired order and display</span></th>
 			<td><i class="dashicons dashicons-no-alt"> </i></td>
 			<td><i class="dashicons dashicons-yes"> </i></td>
