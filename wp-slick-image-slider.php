@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel. Also work with Gutenberg shortcode block.  
  * Author: WP OnlineSupport
- * Version: 1.6
+ * Version: 1.6.1
  * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
@@ -14,7 +14,7 @@
  */
 
 if( !defined('WPSISAC_VERSION') ) {
-    define( 'WPSISAC_VERSION', '1.6' ); // Plugin version
+    define( 'WPSISAC_VERSION', '1.6.1' ); // Plugin version
 }
 if( !defined( 'WPSISAC_VERSION_DIR' ) ) {
     define( 'WPSISAC_VERSION_DIR', dirname( __FILE__ ) ); // Plugin dir
@@ -93,17 +93,12 @@ function wpos_analytics_anl25_load() {
                             'type'          => 'plugin',
                             'menu'          => 'edit.php?post_type=slick_slider',
                             'text_domain'   => 'wp-slick-slider-and-image-carousel',
-                            'promotion'     => array(
-                                                    'bundle' => array(
-                                                        'name'  => 'Download FREE 50 Plugins, 10+ Themes and Dashboard Plugin',
-                                                        'desc'  => 'Download FREE 50 Plugins, 10+ Themes and Dashboard Plugin',
-                                                        'file'  => 'https://www.wponlinesupport.com/latest/wpos-free-50-plugins-plus-12-themes.zip'
-                                                    )
-                                                ),
                             'offers'        => array(
                                                     'trial_premium' => array(
                                                             1 => array(
                                                                     'image' => 'http://analytics.wponlinesupport.com/?anylc_img=25',
+                                                                    'link'  => 'https://www.wponlinesupport.com/pricing/?utm_source=OptIn&utm_medium=Banner&utm_campaign=OptInBanner#fndtn-lifetime-combo',
+                                                                    'desc'  => 'Or start using the plugin from admin menu',
                                                                 ),
                                                     ),
                                                 ),
