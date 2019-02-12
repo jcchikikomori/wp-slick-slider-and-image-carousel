@@ -1,8 +1,8 @@
 === WP Slick Slider and Image Carousel  ===
 Contributors: wponlinesupport, anoopranawat, pratik-jain
 Tags: wponlinesupport, slick, image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive content slider, carousel, image carousel, carousel slider, content slider, coin slider, touch slider, text slider, responsive slider, responsive slideshow, Responsive Touch Slider, wp slider, wp image slider, wp header image slider, photo slider, responsive photo slider  
-Requires at least: 3.5
-Tested up to: 5.0.2
+Requires at least: 4.0
+Tested up to: 5.0.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -121,6 +121,9 @@ Also work with Gutenberg shortcode block.
 7. Also work with Gutenberg shortcode block.
 
 == Changelog ==
+
+= 1.6.2 (12, Feb 2019) =
+* [*] Minor change in Opt-in flow.
 
 = 1.6.1 (26, Dec 2018) =
 * [*] Update Opt-in flow.
