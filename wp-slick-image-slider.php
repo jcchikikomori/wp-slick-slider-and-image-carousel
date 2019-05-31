@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display wp slick image slider and carousel. Also work with Gutenberg shortcode block.  
  * Author: WP OnlineSupport
- * Version: 1.6.2
+ * Version: 1.7
  * Author URI: https://www.wponlinesupport.com
  *
  * @package WordPress
@@ -14,7 +14,7 @@
  */
 
 if( !defined('WPSISAC_VERSION') ) {
-	define( 'WPSISAC_VERSION', '1.6.2' ); // Plugin version
+	define( 'WPSISAC_VERSION', '1.7' ); // Plugin version
 }
 if( !defined( 'WPSISAC_VERSION_DIR' ) ) {
 	define( 'WPSISAC_VERSION_DIR', dirname( __FILE__ ) ); // Plugin dir

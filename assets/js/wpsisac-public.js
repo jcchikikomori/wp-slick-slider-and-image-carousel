@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
 			autoplaySpeed	: parseInt(slider_conf.autoplay_interval),
 			slidesToShow	: parseInt(slider_conf.slidestoshow),
 			infinite 		: true,
+			centerPadding	: '0px',
 			slidesToScroll	: parseInt(slider_conf.slidestoscroll),
 			centerMode 		: (slider_conf.centermode) == "true" ? true : false,
 			variableWidth 	: (slider_conf.variablewidth) == "true" ? true : false,			

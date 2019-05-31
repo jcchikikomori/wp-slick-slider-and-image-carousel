@@ -2,7 +2,7 @@
 Contributors: wponlinesupport, anoopranawat, pratik-jain
 Tags: wponlinesupport, slick, image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive content slider, carousel, image carousel, carousel slider, content slider, coin slider, touch slider, text slider, responsive slider, responsive slideshow, Responsive Touch Slider, wp slider, wp image slider, wp header image slider, photo slider, responsive photo slider  
 Requires at least: 4.0
-Tested up to: 5.2
+Tested up to: 5.2.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -37,12 +37,13 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 * **limit** : [slick-slider limit="-1"] (Limit define the number of images to be display at a time. By default set to "-1" ie all images. eg. if you want to display only 5 images then set limit to limit="5")
 * **category**: [slick-slider category="category_ID"] ( ie Display slider by their category ID ).
-* **show_content** : [slick-slider show_content="true" ] (Display content OR not. By default value is "True". Options are "ture OR false").
+* **show_content** : [slick-slider show_content="true" ] (Display content OR not. By default value is "true". Options are "ture OR false").
 * **Pagination and arrows** : [slick-slider dots="false" arrows="false"]
 * **Autoplay and Autoplay Interval**: [slick-slider autoplay="true" autoplay_interval="100"]
 * **Slide Speed**: [slick-slider speed="3000"]
 * **fade** : [slick-slider fade="true" ] (Slider Fade effect. By default effect is slide. If you set fade="true" then effect change from slide to fade ).
-* **sliderheight** : [slick-slider sliderheight="400" ] (Slider height. By default given 500px height.)
+* **image_fit** : [slick-slider image_fit="true" ] (image_fit parameter is used to specify how an <img> should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE : This parameter work better if sliderheight is given.
+* **sliderheight** : [slick-slider sliderheight="400" ] (Set image wrap height. NOTE : This parameter work better if image_fit="true" ).
 * **rtl** : [slick-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
 
 = Use Following parameters with shortcode =
@@ -60,7 +61,8 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 * **Slide Speed**: [slick-carousel-slider speed="3000"]
 * **centermode** : [slick-carousel-slider centermode="true" ] ( Display main image on center. By default value is "false" ).
 * **variablewidth** : [slick-carousel-slider variablewidth="true" ] (Variable width of images in slider. By default value us "false")
-* **sliderheight** : [slick-carousel-slider sliderheight="400" ] (Slider height. By default given 500px height.)
+* **image_fit** : [slick-carousel-slider image_fit="true" ] (image_fit parameter is used to specify how an <img> should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE : This parameter work better if sliderheight is given.
+* **sliderheight** : [slick-carousel-slider sliderheight="400" ] (Set image wrap height. NOTE : This parameter work better if image_fit="true" ).
 * **rtl** : [slick-carousel-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
 
 = PRO Features Added : =
@@ -121,6 +123,11 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 7. Also work with Gutenberg shortcode block.
 
 == Changelog ==
+
+= 1.7 (31, May 2019) =
+* [+] Added new shortcode parameter ie image_fit="true". image_fit parameter is used to specify how an <img> should be resized to fit its container. By default value is "True". Options are "ture OR false". NOTE : This parameter work better if sliderheight is given. This parameter work with both the shortcode. 
+* [-] Removed default height 400 from sliderheight parameter.
+* [-] Remove object-fit CSS property from img under CSS if image_fit="false".
 
 = 1.6.2 (12, Feb 2019) =
 * [*] Minor change in Opt-in flow.

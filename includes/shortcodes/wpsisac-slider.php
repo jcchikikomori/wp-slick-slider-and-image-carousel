@@ -13,6 +13,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 		"speed"             => '300',
 		"fade"		        => 'false',
 		"sliderheight"     	=> '',
+		"image_fit" 		=> 'true',
 		"rtl"               => '',
 	), $atts));	
 	
@@ -27,7 +28,8 @@ function get_wpsisac_slider( $atts, $content = null ){
 	$autoplay 			= ( $autoplay == 'false' ) 			? 'false' 						: 'true';
 	$autoplay_interval 	= (!empty($autoplay_interval)) 		? $autoplay_interval 			: 3000;
 	$speed 				= (!empty($speed)) 					? $speed 						: 300;
-	$fade 				= ( $fade == 'true' ) 				? 'true' 						: 'false';	
+	$fade 				= ( $fade == 'true' ) 				? 'true' 						: 'false';
+	$image_fit			= ( $image_fit == 'false' )			? 0                             : 1;	
 	$sliderheight 		= (!empty($sliderheight)) 			? $sliderheight 				: '';
 	$slider_height_css 	= (!empty($sliderheight))			? "style='height:{$sliderheight}px;'" : '';
 	
@@ -48,6 +50,9 @@ function get_wpsisac_slider( $atts, $content = null ){
 	// Enqueus required script
 	wp_enqueue_script( 'wpos-slick-jquery' );
 	wp_enqueue_script( 'wpsisac-public-script' );
+	
+	// Taking some variables
+	$image_fit_class = ( $image_fit ) 			? 'wpsisac-image-fit'		: '';
 	
 	// Slider configuration
 	$slider_conf = compact('dots', 'arrows', 'autoplay', 'autoplay_interval', 'fade','speed', 'rtl');
@@ -78,7 +83,7 @@ function get_wpsisac_slider( $atts, $content = null ){
     if ( $query->have_posts() ) :
 	?>
 	<div class="wpsisac-slick-slider-wrp wpsisac-clearfix">
-		<div id="wpsisac-slick-slider-<?php echo $unique; ?>" class="wpsisac-slick-slider <?php echo $design; ?>">
+		<div id="wpsisac-slick-slider-<?php echo $unique; ?>" class="wpsisac-slick-slider <?php echo $design; ?> <?php echo $image_fit_class; ?>">
 			<?php while ( $query->have_posts() ) : $query->the_post();		
 			$slider_img 	= wpsisac_get_post_featured_image( $post->ID, 'full', true );
 					// Include shortcode html file
