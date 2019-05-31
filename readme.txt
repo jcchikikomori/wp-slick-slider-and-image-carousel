@@ -42,7 +42,7 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 * **Autoplay and Autoplay Interval**: [slick-slider autoplay="true" autoplay_interval="100"]
 * **Slide Speed**: [slick-slider speed="3000"]
 * **fade** : [slick-slider fade="true" ] (Slider Fade effect. By default effect is slide. If you set fade="true" then effect change from slide to fade ).
-* **image_fit** : [slick-slider image_fit="true" ] (image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE : This parameter work better if sliderheight is given.
+* **image_fit** : [slick-slider image_fit="true"] (image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE :  image_fit="true" work better if sliderheight is given. if image_fit="false", no need to use sliderheight parameter.
 * **sliderheight** : [slick-slider sliderheight="400" ] (Set image wrap height. NOTE : This parameter work better if image_fit="true" ).
 * **rtl** : [slick-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
 
@@ -61,7 +61,7 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 * **Slide Speed**: [slick-carousel-slider speed="3000"]
 * **centermode** : [slick-carousel-slider centermode="true" ] ( Display main image on center. By default value is "false" ).
 * **variablewidth** : [slick-carousel-slider variablewidth="true" ] (Variable width of images in slider. By default value us "false")
-* **image_fit** : [slick-carousel-slider image_fit="true" ] (image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE : This parameter work better if sliderheight is given.
+* **image_fit** : [slick-carousel-slider image_fit="true" ] (image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE :  image_fit="true" work better if sliderheight is given. if image_fit="false", no need to use sliderheight parameter.
 * **sliderheight** : [slick-carousel-slider sliderheight="400" ] (Set image wrap height. NOTE : This parameter work better if image_fit="true" ).
 * **rtl** : [slick-carousel-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
 
@@ -125,7 +125,8 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 == Changelog ==
 
 = 1.7 (31, May 2019) =
-* [+] Added new shortcode parameter ie image_fit="true". image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false". NOTE : This parameter work better if sliderheight is given. This parameter work with both the shortcode. 
+* [+] Added new shortcode parameter ie image_fit="true". image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false". NOTE : NOTE :  image_fit="true" work better if sliderheight is given. if image_fit="false", no need to use sliderheight parameter.  
+* [*] image_fit parameter work with both the shortcode.
 * [-] Removed default height 400 from sliderheight parameter.
 * [-] Remove object-fit CSS property from img under CSS if image_fit="false".
 
