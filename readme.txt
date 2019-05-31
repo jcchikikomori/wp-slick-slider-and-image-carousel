@@ -42,6 +42,7 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 * **Autoplay and Autoplay Interval**: [slick-slider autoplay="true" autoplay_interval="100"]
 * **Slide Speed**: [slick-slider speed="3000"]
 * **fade** : [slick-slider fade="true" ] (Slider Fade effect. By default effect is slide. If you set fade="true" then effect change from slide to fade ).
+* **image_size** : [slick-slider image_size="full"] (Default is "full", values are thumbnail, medium, medium_large, large, full)
 * **image_fit** : [slick-slider image_fit="true"] (image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false"). NOTE :  image_fit="true" work better if sliderheight is given. if image_fit="false", no need to use sliderheight parameter.
 * **sliderheight** : [slick-slider sliderheight="400" ] (Set image wrap height. NOTE : This parameter work better if image_fit="true" ).
 * **rtl** : [slick-slider rtl="true"] (for rtl mode. By default value is "false". Options are "ture OR false").
@@ -53,7 +54,7 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 * **limit** : [slick-carousel-slider limit="-1"] (Limit define the number of images to be display at a time. By default set to "-1" ie all images. eg. if you want to display only 5 images then set limit to limit="5")
 * **design** : [slick-carousel-slider design="design-1"] (You can select 5 design( design-1, design-2, design-3, design-4, design-5 ) for your  slider. Slick Slider -> Slider Designs ).
 * **category**: [slick-carousel-slider category="category_ID"] ( ie Display slider by their category ID ).
-* **image_size** : [slick-carousel-slider image_size="large"] (Default is "medium", values are thumbnail, medium, large, original)
+* **image_size** : [slick-carousel-slider image_size="full"] (Default is "full", values are thumbnail, medium, medium_large, large, full)
 * **slidestoshow** : [slick-carousel-slider slidestoshow="3" ] (Display number of images at a time. By default value is "3").
 * **slidestoscroll** : [slick-carousel-slider slidestoscroll="1" ] (Scroll number of images at a time. By default value is "1").
 * **Pagination and arrows** : [slick-carousel-slider dots="false" arrows="false"]
@@ -124,9 +125,10 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 == Changelog ==
 
-= 1.7 (31, May 2019) =
+= 1.7.1 (31, May 2019) =
 * [+] Added new shortcode parameter ie image_fit="true". image_fit parameter is used to specify how an image should be resized to fit its container. By default value is "True". Options are "ture OR false". NOTE : NOTE :  image_fit="true" work better if sliderheight is given. if image_fit="false", no need to use sliderheight parameter.  
 * [*] image_fit parameter work with both the shortcode.
+* [+] Added new shortcode parameter ie image_size="full" for shortcode [slick-slider] (Default is "full", values are thumbnail, medium, medium_large, large, full)
 * [-] Removed default height 400 from sliderheight parameter.
 * [-] Remove object-fit CSS property from img under CSS if image_fit="false".
 

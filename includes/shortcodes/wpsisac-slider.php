@@ -5,6 +5,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	    "limit"    			=> '-1',
 		"category" 			=> '',
 		"design" 			=> 'design-1',
+		"image_size" 		=> 'full',	
 		"show_content" 		=> 'true',       
 		"dots"     			=> 'true',
 		"arrows"     		=> 'true',
@@ -32,6 +33,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	$image_fit			= ( $image_fit == 'false' )			? 0                             : 1;	
 	$sliderheight 		= (!empty($sliderheight)) 			? $sliderheight 				: '';
 	$slider_height_css 	= (!empty($sliderheight))			? "style='height:{$sliderheight}px;'" : '';
+	$sliderimage_size 	= !empty($image_size) 				? $image_size 					: 'full';
 	
 	// For RTL
 	if( empty($rtl) && is_rtl() ) {
@@ -85,7 +87,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	<div class="wpsisac-slick-slider-wrp wpsisac-clearfix">
 		<div id="wpsisac-slick-slider-<?php echo $unique; ?>" class="wpsisac-slick-slider <?php echo $design; ?> <?php echo $image_fit_class; ?>">
 			<?php while ( $query->have_posts() ) : $query->the_post();		
-			$slider_img 	= wpsisac_get_post_featured_image( $post->ID, 'full', true );
+			$slider_img 	= wpsisac_get_post_featured_image( $post->ID, $sliderimage_size, true );
 					// Include shortcode html file
 						if( $design_file ) {
 							include( $design_file );
