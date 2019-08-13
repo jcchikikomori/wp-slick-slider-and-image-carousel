@@ -1,0 +1,14 @@
+{
+  "name": "gorated/wp-slick-slider-and-image-carousel",
+  "description": "Cove Manila version of WP Slick Slider and Image Carousel (imported from SVN trunk)",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://wordpress.org/plugins/wp-slick-slider-and-image-carousel/",
+  "authors": [{
+    "name": "WP OnlineSupport",
+    "homepage": "https://www.wponlinesupport.com/"
+  }],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.6"
+  }
+}
